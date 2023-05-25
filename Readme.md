@@ -1,7 +1,7 @@
 # Личный проект «Седона»
 
-* Студент: [Юля Прохорова](https://up.htmlacademy.ru/htmlcss/37/user/2361877).
-* Наставник: `Неизвестно`.
+* Студент: [Юлия Прохорова](https://up.htmlacademy.ru/htmlcss/37/user/2361877).
+* Наставник: [Наталья Зотова](https://htmlacademy.ru/profile/id1079951).
 
 ---
 
