@@ -57,6 +57,41 @@
                 </li>
             </ul>
             <h2 class="visually-hidden">Фильтр по гостиницам</h2>
+            <form class="filter-form" action="#" method="get">
+              <fieldset class="filter-group filter-group-check">
+                <legend class="filter-title">Инфраструктура</legend>
+                <ul class="filter-list control-list list-reset">
+                  <li class="control-item">
+                    <label class="control-label">
+                      <input class="control-input" type="checkbox" name="pool" checked>Бассейн
+                    </label>
+                  </li>
+                  <li>
+                    <label class="control-label">
+                      <input class="control-input" type="checkbox" name="parking" checked>Паркинг
+                    </label>
+                  </li>
+                  <li>
+                    <label class="control-label">
+                      <input class="control-input" type="checkbox" name="wifi">Wi-Fi
+                    </label>
+                  </li>
+                  </ul>
+              </fieldset>
+              <fieldset>
+                <legend>Тип Жилья</legend>
+                <label><input type="radio" name="type" value="Гостиница" checked>Гостиница</label>
+                <label><input type="radio" name="type" value="Мотель">Мотель</label>
+                <label><input type="radio" name="type" value="Апартаменты">Апартаменты</label>
+              </fieldset>
+              <fieldset>
+                <legend>Стоимость, <span>₽</span></legend>
+                <label>от<input type="text" value="0"></label>
+                <label>до<input type="text" value="9000"></label>
+              </fieldset>
+              <button type="submit">Применить</button>
+              <button type="reset">Сбросить</button>
+            </form>
 
         </section>
         <section>
