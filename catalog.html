@@ -59,7 +59,7 @@
             <h2 class="visually-hidden">Фильтр по гостиницам</h2>
             <form class="filter-form" action="#" method="get">
               <fieldset class="filter-group filter-group-check">
-                <legend class="filter-title">Инфраструктура</legend>
+                <legend class="filter-title">Инфраструктура:</legend>
                 <ul class="filter-list control-list list-reset">
                   <li class="control-item">
                     <label class="control-label">
@@ -78,11 +78,25 @@
                   </li>
                   </ul>
               </fieldset>
-              <fieldset>
-                <legend>Тип Жилья</legend>
-                <label><input type="radio" name="type" value="Гостиница" checked>Гостиница</label>
-                <label><input type="radio" name="type" value="Мотель">Мотель</label>
-                <label><input type="radio" name="type" value="Апартаменты">Апартаменты</label>
+              <fieldset class="filter-group filter-group-radio">
+                <legend class="filter-title">Тип Жилья:</legend>
+                <ul class="filter-list control-list list-reset">
+                  <li class="control-list">
+                    <label class="control-item">
+                      <input class="control-input" type="radio" name="type" value="hotel" checked>Гостиница
+                    </label>
+                  </li>
+                  <li class="control-list">
+                    <label class="control-item">
+                     <input class="control-input" type="radio" name="type" value="motel">Мотель
+                    </label>
+                  </li>
+                  <li class="control-list">
+                    <label class="control-item">
+                      <input class="control-input" type="radio" name="type" value="apart">Апартаменты
+                    </label>
+                  </li>
+                </ul>
               </fieldset>
               <fieldset>
                 <legend>Стоимость, <span>₽</span></legend>
