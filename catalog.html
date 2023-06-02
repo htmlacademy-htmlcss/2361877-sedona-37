@@ -98,10 +98,15 @@
                   </li>
                 </ul>
               </fieldset>
-              <fieldset>
-                <legend>Стоимость, <span>₽</span></legend>
-                <label>от<input type="text" value="0"></label>
-                <label>до<input type="text" value="9000"></label>
+              <fieldset class="filter-group filter-group-range">
+                <legend class="filter-title">Стоимость, ₽:</legend>
+                <label class="control-item">от
+                  <input class="control-input" type="text" value="0">
+                </label>
+                <label class="control-item">до
+                  <input class="control-input" type="text" value="9000">
+                </label>
+                <!--тут будет бегунок ранжирования-->
               </fieldset>
               <button type="submit">Применить</button>
               <button type="reset">Сбросить</button>
