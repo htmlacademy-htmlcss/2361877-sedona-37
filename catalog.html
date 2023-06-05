@@ -79,26 +79,22 @@
               <legend class="filter-title">Тип Жилья:</legend>
               <ul class="filter-list control-list list-reset">
                 <li class="control-list">
-                  <label class="control-item">
-                    <input class="control-input" type="radio" name="type" value="hotel" checked>Гостиница</label>
+                  <input class="control-input" type="radio" id="hotel" name="type" value="hotel" checked>
+                  <label class="control-item" for="hotel">Гостиница</label>
                 </li>
                 <li class="control-list">
-                  <label class="control-item">
-                    <input class="control-input" type="radio" name="type" value="motel">Мотель</label>
+                  <input class="control-input" type="radio" id="motel" name="type" value="motel">
+                  <label class="control-item" for="motel">Мотель</label>
                 </li>
                 <li class="control-list">
-                  <label class="control-item">
-                    <input class="control-input" type="radio" name="type" value="apart">Апартаменты</label>
+                  <input class="control-input" type="radio" id="apart" name="type" value="apart">
+                  <label class="control-item" for="apart">Апартаменты</label>
                 </li>
               </ul>
             </fieldset>
             <fieldset class="filter-group filter-group-range">
               <legend class="filter-title">Стоимость, ₽:</legend>
-              <label class="control-item">от
-                <input class="control-input" type="text" value="0"></label>
-              <label class="control-item">до
-                <input class="control-input" type="text" value="9000"></label>
-              <!--тут будет бегунок ранжирования-->
+              <span class="visually-hidden">Тут будет фильтр полосы</span>
             </fieldset>
             <fieldset class="filter-group filter-group-buttons">
               <button class="button button-light filter-submit" type="submit">Применить</button>
