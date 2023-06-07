@@ -46,3 +46,8 @@ body {
 .advantages-content {
   text-align: center;
 }
+
+.description-title {
+  font-weight: 700;  font-size: 30px;  line-height: 36px;  text-align: center;  color: #000000;
+ text-transform: uppercase; 
+  }
