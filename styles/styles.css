@@ -56,6 +56,9 @@ body {
   }
 
 .advantages-title {
-  font-weight: 700;  font-size: 24px;  line-height: 28px;  color: #000000;
- text-transform: uppercase; 
+  font-weight: 700;  font-size: 24px;  line-height: 28px;  color: #000000;  text-transform: uppercase;
   }
+
+.services-content {
+  text-align: center;
+}
