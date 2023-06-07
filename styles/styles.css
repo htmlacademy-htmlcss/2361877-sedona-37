@@ -1,0 +1,22 @@
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  box-sizing: border-box;  min-height: 100vh;  margin: 0;  padding: 0;  background-color: #f2f2f2;
+  }
+
+body {
+  position: relative;  display: flex;  flex-direction: column;  width: 1200px;  min-height: 100vh;  margin: 0 auto;  font-style: normal;  font-size: 18px;  line-height: 21px;  color: #333333;
+  }
+
+@font-face { font-weight: 400; 
+  font-family: "PT Sans";  font-display: swap;
+ src: url("../fonts/ptsans-400.woff2") format("woff2"); 
+  }
+
+@font-face { font-weight: 700; 
+  font-family: "PT Sans";  font-display: swap;
+ src: url("../fonts/ptsans-700.woff2") format("woff2"); 
+  }
