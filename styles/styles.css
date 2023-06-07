@@ -30,3 +30,8 @@ body {
 .user-link {
   font-weight: 700;  font-size: 20px;  line-height: 24px;  font-family: "PT Sans", sans-serif;  text-align: center;  color: #000000;  text-transform: capitalize;  text-decoration: none;  background-color: #ffffff;
   }
+
+.nav-button {
+  display: flex;  align-items: center;  width: 160px;  height: 36px;  font-size: 16px;  line-height: 20px;  text-align: center;  color: #ffffff;  text-transform: uppercase;  text-decoration: none;
+ background: #756157;  border-radius: 4px; 
+  }
