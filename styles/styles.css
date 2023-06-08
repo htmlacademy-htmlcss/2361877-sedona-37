@@ -213,6 +213,7 @@ img {
 }
 
 .subscribe-main {
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   padding: 96px 258px 104px;
@@ -226,7 +227,9 @@ img {
 
 }
 
-/*НЕ ПОЛУЧАЕТСЯ ОБЪЕДИНИТЬ ИНПУТ И КНОПКУ В ОДНУ СТРОКУ*/
+/*НЕ ПОЛУЧАЕТСЯ ОБЪЕДИНИТЬ ИНПУТ И КНОПКУ В ОДНУ СТРОКУ
+НЕ ВЛЕЗАЕТ, ЕСЛИ PADDING ДЕЛАТЬ ПО МАКЕТУ*/
+
 
 .subscribe-input {
   margin-top: 54px;
