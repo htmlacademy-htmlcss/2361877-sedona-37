@@ -178,6 +178,21 @@ img {
   color: #000000;
 }
 
+.search-button {
+  margin-top: 62px;
+  margin-right: 412px;
+  margin-bottom: 104px;
+  margin-left: 412px;
+  padding-top: 8px;
+  padding-right: 50px;
+  padding-bottom: 8px;
+  padding-left: 50px;
+
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 36px;
+}
+
 .subscribe-title {
   font-weight: 700;
   font-size: 30px;
