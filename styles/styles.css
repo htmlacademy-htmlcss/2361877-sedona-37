@@ -172,6 +172,9 @@ img {
 }
 
 .search-title {
+  margin-top: 96px;
+  margin-bottom: 20px;
+
   font-size: 30px;
   line-height: 36px;
   text-align: center;
