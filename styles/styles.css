@@ -151,13 +151,60 @@ img {
   text-transform: uppercase;
 }
 
-.advantages-title {
+.advantages-description-title {
   font-size: 24px;
   line-height: 28px;
+  text-align: center;
   color: #000000;
+
 
 }
 
 .services-content {
   text-align: center;
+}
+
+.services-description-title {
+  font-size: 24px;
+  line-height: 28px;
+  text-align: center;
+  color: #000000;
+}
+
+.search-title {
+  font-size: 24px;
+  line-height: 28px;
+  text-align: center;
+  color: #000000;
+}
+
+.subscribe-title {
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 36px;
+  text-align: center;
+  color: #ffffff;
+}
+
+.subscribe-text {
+  margin-top: 20px;
+
+  font-size: 22px;
+  line-height: 26px;
+  color: #ffffff;
+}
+
+.subscribe-main {
+  justify-content: center;
+  align-items: center;
+  padding: 96px 258px 104px;
+
+  color: #333333;
+
+  background-color: #f2f2f2;
+  background-image: url(../images/subscribe-background.jpeg);
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+
+  gap: 10px;
 }
