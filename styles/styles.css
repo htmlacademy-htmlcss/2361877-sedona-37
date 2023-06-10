@@ -449,7 +449,33 @@ img {
   border-radius: 4px;
 }
 
+/*звезды не отображаются*/
 .hotels-rating-star {
   background-image: url(../images/svg/stars-4.svg);
   background-repeat: no-repeat;
+}
+
+.pagination-link {
+  padding-top: 11.36px;
+  padding-right: 24.55px;
+  padding-bottom: 12.64px;
+  padding-left: 23.45px;
+
+  color: #ffffff;
+
+  background: #82b3d3;
+  border-radius: 4px;
+}
+
+.pagination-link-current {
+  color: #000000;
+
+  background: #f2f2f2;
+}
+
+/* кнопка троеточия почему-то наследует цвет фона. хотя кнопка с цифрой 1 не наследовала*/
+.pagination-link-more {
+  color: #000000;
+
+  background: rgba (0, 0, 0, 0);
 }
