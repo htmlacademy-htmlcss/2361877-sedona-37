@@ -319,6 +319,23 @@ img {
 
 /*Каталог*/
 
+.catalog {
+  color: #ffffff;
+
+  background-color: #f2f2f2;
+  background-image: url(../images/catalog/catalog-background.jpeg);
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+}
+
+.filter-title-white {
+  font-weight: 700;
+  font-size: 60px;
+  line-height: 78px;
+  color: #ffffff;
+  text-transform: none;
+}
+
 .breadcrumbs-link-home {
   background-image: url(../images/svg/breadcrumbs-home.svg);
   background-repeat: no-repeat;
