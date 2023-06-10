@@ -151,6 +151,13 @@ img {
   text-transform: uppercase;
 }
 
+.advantages-content-road {
+  text-align: center;
+  text-transform: uppercase;
+
+  background-color: rgba(131, 179, 211, 0.2);
+}
+
 .advantages-description-title {
   font-size: 30px;
   line-height: 36px;
