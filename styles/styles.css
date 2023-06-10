@@ -207,6 +207,11 @@ img {
   background-repeat: no-repeat;
 }
 
+.services-content-food {
+  background-image: url(../images/svg/food.svg);
+  background-repeat: no-repeat;
+}
+
 .search-title {
   margin-top: 96px;
   margin-bottom: 20px;
