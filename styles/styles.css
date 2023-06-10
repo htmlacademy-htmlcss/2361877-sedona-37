@@ -388,3 +388,18 @@ img {
   font-size: 18px;
   line-height: 21px;
 }
+
+.view-link-tile {
+  background-image: url(../images/svg/view-tile.svg);
+  background-repeat: no-repeat;
+}
+
+.view-link-preview {
+  background-image: url(../images/svg/view-preview.svg);
+  background-repeat: no-repeat;
+}
+
+.view-link-list {
+  background-image: url(../images/svg/view-list.svg);
+  background-repeat: no-repeat;
+}
