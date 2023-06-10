@@ -357,3 +357,10 @@ img {
   color: #ffffff;
   text-transform: none;
 }
+
+.control-input {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 23px;
+}
