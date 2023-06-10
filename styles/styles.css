@@ -182,6 +182,14 @@ img {
   color: #000000;
 }
 
+.services-content-home {
+  background-color: rgba(131, 179, 211, 0.12);
+}
+
+.services-content-souvenirs {
+  background-color: rgba(131, 179, 211, 0.12);
+}
+
 .search-title {
   margin-top: 96px;
   margin-bottom: 20px;
