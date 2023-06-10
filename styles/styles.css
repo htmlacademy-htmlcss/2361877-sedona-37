@@ -479,3 +479,11 @@ img {
 
   background: rgba (0, 0, 0, 0);
 }
+
+.subscribe-title {
+  color: #000000;
+}
+
+.subscribe-text {
+  color: #333333;
+}
