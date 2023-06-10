@@ -237,7 +237,7 @@ img {
   line-height: 36px;
 }
 
-.subscribe-title {
+.subscribe-main .subscribe-title {
   font-weight: 700;
   font-size: 30px;
   line-height: 36px;
@@ -245,7 +245,7 @@ img {
   color: #ffffff;
 }
 
-.subscribe-text {
+.subscribe-main .subscribe-text {
   margin-top: 20px;
 
   font-size: 22px;
