@@ -368,3 +368,23 @@ img {
 .button-light {
   background-color: #82b3d3;
 }
+
+.button-transparent {
+  background-color: rgba(0, 0, 0, 0);
+}
+
+.hotels-favorites-active {
+  background-color: #7db54f;
+}
+
+.inexpensive {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+}
+
+.expensive {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+}
