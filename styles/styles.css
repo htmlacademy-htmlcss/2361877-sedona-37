@@ -328,16 +328,24 @@ img {
   background-size: 100% auto;
 }
 
+/*Иконка-ссылка с домиком не отображается! Не понимаю, почему*/
+.breadcrumbs-link-home {
+  background-image: url(../images/svg/breadcrumbs-home.svg);
+  background-repeat: no-repeat;
+}
+
+.filter-title {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+  color: #ffffff;
+  text-transform: capitalize;
+}
+
 .filter-title-white {
   font-weight: 700;
   font-size: 60px;
   line-height: 78px;
   color: #ffffff;
   text-transform: none;
-}
-
-/*Иконка-ссылка с домиком не отображается! Не понимаю, почему*/
-.breadcrumbs-link-home {
-  background-image: url(../images/svg/breadcrumbs-home.svg);
-  background-repeat: no-repeat;
 }
