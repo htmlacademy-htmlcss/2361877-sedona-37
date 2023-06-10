@@ -135,6 +135,13 @@ img {
   background-size: 100% auto;
 }
 
+.hero-img {
+  margin-top: 51px;
+  margin-right: 371px;
+  margin-bottom: 82px;
+  margin-left: 371px;
+}
+
 .page-title {
   margin: 0;
 
