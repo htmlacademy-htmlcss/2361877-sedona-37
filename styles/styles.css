@@ -364,3 +364,7 @@ img {
   font-size: 18px;
   line-height: 23px;
 }
+
+.button-light {
+  background-color: #82b3d3;
+}
