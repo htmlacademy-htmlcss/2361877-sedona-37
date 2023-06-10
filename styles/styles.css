@@ -336,6 +336,7 @@ img {
   text-transform: none;
 }
 
+/*Иконка-ссылка с домиком не отображается! Не понимаю, почему*/
 .breadcrumbs-link-home {
   background-image: url(../images/svg/breadcrumbs-home.svg);
   background-repeat: no-repeat;
