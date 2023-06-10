@@ -203,6 +203,8 @@ img {
 
 .services-content-souvenirs {
   background-color: rgba(131, 179, 211, 0.12);
+  background-image: url(../images/svg/souvenires.svg);
+  background-repeat: no-repeat;
 }
 
 .search-title {
