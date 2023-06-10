@@ -415,3 +415,19 @@ img {
 .hotels-link {
   text-decoration: none;
 }
+
+.hotels-text-name {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+  text-align: left;
+  color: #333333;
+}
+
+.hotels-text-price {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+  text-align: right;
+  color: #333333;
+}
