@@ -316,3 +316,10 @@ img {
   text-transform: uppercase;
   text-decoration: none;
 }
+
+/*Каталог*/
+
+.breadcrumbs-link-home {
+  background-image: url(../images/svg/breadcrumbs-home.svg);
+  background-repeat: no-repeat;
+}
