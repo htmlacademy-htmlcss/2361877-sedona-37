@@ -146,6 +146,12 @@ img {
   text-align: center;
 }
 
+.advantages-container {
+  color: #ffffff;
+
+  background-color: #82b3d3;
+}
+
 .advantages-content {
   text-align: center;
   text-transform: uppercase;
