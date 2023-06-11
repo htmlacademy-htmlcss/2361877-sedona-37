@@ -140,6 +140,8 @@ img {
   margin-left: 371px;
   padding-top: 51px;
   padding-bottom: 82px;
+
+  color: #333333;
 }
 
 .page-title {
@@ -196,18 +198,24 @@ img {
 }
 
 .services-content-home {
+  color: #333333;
+
   background-color: rgba(131, 179, 211, 0.12);
   background-image: url(../images/svg/home.svg);
   background-repeat: no-repeat;
 }
 
 .services-content-souvenirs {
+  color: #333333;
+
   background-color: rgba(131, 179, 211, 0.12);
   background-image: url(../images/svg/souvenires.svg);
   background-repeat: no-repeat;
 }
 
 .services-content-food {
+  color: #333333;
+
   background-image: url(../images/svg/food.svg);
   background-repeat: no-repeat;
 }
@@ -330,6 +338,9 @@ img {
 
 /*Иконка-ссылка с домиком не отображается! Не понимаю, почему*/
 .breadcrumbs-link-home {
+  color: #333333;
+
+  background-color: #f2f2f2;
   background-image: url(../images/svg/breadcrumbs-home.svg);
   background-repeat: no-repeat;
 }
@@ -390,16 +401,25 @@ img {
 }
 
 .view-link-tile {
+  color: #333333;
+
+  background-color: #f2f2f2;
   background-image: url(../images/svg/view-tile.svg);
   background-repeat: no-repeat;
 }
 
 .view-link-preview {
+  color: #333333;
+
+  background-color: #f2f2f2;
   background-image: url(../images/svg/view-preview.svg);
   background-repeat: no-repeat;
 }
 
 .view-link-list {
+  color: #333333;
+
+  background-color: #f2f2f2;
   background-image: url(../images/svg/view-list.svg);
   background-repeat: no-repeat;
 }
@@ -459,6 +479,9 @@ img {
 
 /*звезды не отображаются*/
 .hotels-rating-star {
+  color: #333333;
+
+  background-color: #f2f2f2;
   background-image: url(../images/svg/stars-4.svg);
   background-repeat: no-repeat;
 }
