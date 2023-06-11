@@ -355,7 +355,7 @@ img {
   font-size: 60px;
   line-height: 78px;
   color: #ffffff;
-  text-transform: none;
+  text-transform: capitalize;
 }
 
 .control-input {
