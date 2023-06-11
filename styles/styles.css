@@ -136,10 +136,10 @@ img {
 }
 
 .hero-img {
-  margin-top: 51px;
   margin-right: 371px;
-  margin-bottom: 82px;
   margin-left: 371px;
+  padding-top: 51px;
+  padding-bottom: 82px;
 }
 
 .page-title {
