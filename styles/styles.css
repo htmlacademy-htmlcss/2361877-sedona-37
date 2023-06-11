@@ -417,18 +417,26 @@ img {
 }
 
 .hotels-text-name {
+  padding-top: 16px;
+  padding-right: 20px;
+  padding-bottom: 16px;
+  padding-left: 90px;
+
   font-weight: 400;
   font-size: 18px;
   line-height: 21px;
-  text-align: left;
   color: #333333;
 }
 
 .hotels-text-price {
+  padding-top: 16px;
+  padding-right: 60px;
+  padding-bottom: 16px;
+  padding-left: 20px;
+
   font-weight: 400;
   font-size: 18px;
   line-height: 21px;
-  text-align: right;
   color: #333333;
 }
 
