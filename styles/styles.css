@@ -435,7 +435,18 @@ img {
 
 .filter-group {
   display: flex;
+  flex-direction: row;
   justify-content: flex-start;
+}
+
+.filter-group-check {
+  display: flex;
+  flex-direction: column;
+}
+
+.filter-group-radio {
+  display: flex;
+  flex-direction: column;
 }
 
 .breadcrumbs-link {
