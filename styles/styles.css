@@ -89,6 +89,8 @@ img {
 }
 
 .main-nav-link {
+  padding: 20px 16px;
+
   font-weight: 700;
   font-size: 20px;
   line-height: 24px;
@@ -143,6 +145,14 @@ img {
 
 .nav-button {
   width: 160px;
+}
+
+.main-nav-list {
+  display: flex;
+}
+
+.main-nav-current {
+  margin-left: 28px;
 }
 
 .hero {
