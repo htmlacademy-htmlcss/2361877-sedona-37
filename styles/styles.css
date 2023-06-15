@@ -105,6 +105,14 @@ img {
   text-decoration: none;
 }
 
+.user-favorites-number {
+  font-size: 10px;
+  line-height: 10px;
+
+  background-color: #7db54f;
+  border-radius: 10px;
+}
+
 .button {
   display: inline-block;
   margin: 0;
