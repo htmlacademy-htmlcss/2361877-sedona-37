@@ -5,35 +5,38 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Каталог</title>
+    <link rel="stylesheet" href="styles/styles.css">
   </head>
 
   <body>
     <header class="main-header">
-      <nav class="main-header-navigation">
+      <nav class="main-nav">
         <a class="logo" href="index.html">
-          <img class="logo" src="images/header/logo.svg" alt="Логотип Седона" width="140" height="70">
+          <img class="logo" src="images/svg/logo.svg" alt="Логотип Седона" width="140" height="70">
         </a>
         <ul class="main-nav-list list-reset">
           <li class="main-nav-item">
-            <a class="main-nav-link main-nav-current" href="index.html">Главная</a>
+            <a class="main-nav-link" href="index.html">Главная</a>
           </li>
           <li class="main-nav-item">
             <a class="main-nav-link" href="#">О Седоне</a>
           </li>
           <li class="main-nav-item">
-            <a class="main-nav-link" href="catalog.html" aria-current="page">Гостиницы</a>
+            <a class="main-nav-link main-nav-current" href="catalog.html" aria-current="page">Гостиницы</a>
           </li>
         </ul>
         <ul class="main-nav-user list-reset">
           <li class="user-item">
             <a class="user-link user-link-search" href="#">
               <span class="visually-hidden">Поиск</span>
+              <img src="images/svg/search-icon.svg" width="20" height="20" alt="Иконка лупы">
             </a>
           </li>
           <li class="user-item">
             <a class="user-link user-link-favorites" href="#">
               <span class="user-favorites-number">12</span>
               <span class="visually-hidden">Избранное</span>
+              <img src="images/svg/heart-icon.svg" width="20" height="20" alt="Иконка сердечка">
             </a>
           </li>
         </ul>
@@ -42,12 +45,14 @@
       </nav>
     </header>
     <main class="main">
-      <h1 class="filter-title page-title">Гостиницы Седоны</h1>
+      <h1 class="visually-hidden">Каталог гостиниц города Седона</h1>
       <section class="catalog">
+
         <div class="catalog-filter filter">
+          <h2 class="filter-page-title">Гостиницы Седоны</h2>
           <ul class="breadcrumbs-list list-reset">
             <li class="breadcrumbs-item">
-              <a class="breadcrumbs-link breadcrumbs-link-main" href="index.html">
+              <a class="breadcrumbs-link breadcrumbs-link-home" href="index.html">
                 <span class="visually-hidden">Главная</span>
               </a>
             </li>
@@ -102,8 +107,7 @@
           </form>
         </div>
         <div class="catalog-sorting sorting">
-          <p class="sorting-title page-title">Найдено гостиниц:</p>
-          <output class="sorting-result">38</output>
+          <h2 class="sorting-title page-title">Найдено гостиниц: 38</h2>
           <select class="sorting-select" aria-label="Сортировка">
             <option value="inexpensive" selected>Сначала дешевые</option>
             <option value="expensive">Сначала дорогие</option>
@@ -131,7 +135,7 @@
           <ul class="hotels-list list-reset">
             <li class="hotels-item">
               <a class="hotels-img" href="#">
-                <img src="images/catalog/hotels/hotel-1.jpg" width="300" height="212" alt="Amara Resort & Spa">
+                <img src="images/catalog/hotel-1.jpg" width="300" height="212" alt="Amara Resort & Spa">
               </a>
               <a class="hotels-link" href="#">
                 <h3 class="hotels-title">Amara Resort &amp; Spa</h3>
@@ -147,7 +151,7 @@
             </li>
             <li class="hotels-item">
               <a class="hotels-img">
-                <img src="images/catalog/hotels/hotel-2.jpg" width="300" height="212" alt="Villas at Poco Diablo">
+                <img src="images/catalog/hotel-2.jpg" width="300" height="212" alt="Villas at Poco Diablo">
               </a>
               <a class="hotels-link" href="#">
                 <h3 class="hotels-title">Villas at Poco Diablo</h3>
@@ -163,7 +167,7 @@
             </li>
             <li class="hotels-item">
               <a class="hotels-img">
-                <img src="images/catalog/hotels/hotel-3.jpg" width="300" height="212" alt="Desert Quail Inn">
+                <img src="images/catalog/hotel-3.jpg" width="300" height="212" alt="Desert Quail Inn">
               </a>
               <a class="hotels-link" href="#">
                 <h3 class="hotels-title">Desert Quail Inn</h3>
@@ -179,7 +183,7 @@
             </li>
             <li class="hotels-item">
               <a class="hotels-img">
-                <img src="images/catalog/hotels/hotel-4.jpg" width="300" height="212" alt="GreenTree Inn">
+                <img src="images/catalog/hotel-4.jpg" width="300" height="212" alt="GreenTree Inn">
               </a>
               <a class="hotels-link" href="#">
                 <h3 class="hotels-title">GreenTree Inn</h3>
@@ -194,7 +198,7 @@
               <p class="hotels-rating">Рейтинг: 5,0</p>
             </li>
           </ul>
-          <ul class="pagination-list">
+          <ul class="pagination-list list-reset">
             <li class="pagination-item">
               <a class="pagination-link pagination-link-current" href="#" aria-current="page">1</a>
             </li>
@@ -208,7 +212,7 @@
               <a class="pagination-link" href="#">4</a>
             </li>
             <li class="pagination-item">
-              <a class="pagination-link pagination-link-more" href="#" aria-label="Следующая страница">...</a>
+              <p class="pagination-link pagination-link-more" aria-label="Следующая страница">...</p>
             </li>
             <li class="pagination-item">
               <a class="pagination-link" href="#">10</a>
@@ -231,19 +235,19 @@
         <li class="social-item">
           <a class="social-link" href="https://vk.com/htmlacademy">
             <span class="visually-hidden">ВКонтакте</span>
-            <img class="social-icon" src="images/footer/social/icon-vkontakte.svg" width="48" height="41" alt="Лого ВКонтакте">
+            <img class="social-icon" src="images/svg/icon-vkontakte.svg" width="48" height="41" alt="Лого ВКонтакте">
           </a>
         </li>
         <li class="social-item">
           <a class="social-link" href="https://t.me/htmlacademy">
             <span class="visually-hidden">Телеграм</span>
-            <img class="social-icon" src="images/footer/social/icon-telegram.svg" width="48" height="41" alt="Лого Телеграм">
+            <img class="social-icon" src="images/svg/icon-telegram.svg" width="48" height="41" alt="Лого Телеграм">
           </a>
         </li>
         <li class="social-item">
           <a class="social-link" href="https://www.youtube.com/user/htmlacademyru">
             <span class="visually-hidden">YouTube</span>
-            <img class="social-icon" src="images/footer/social/icon-youtube.svg" width="48" height="41" alt=" Лого YouTube">
+            <img class="social-icon" src="images/svg/icon-youtube.svg" width="48" height="41" alt=" Лого YouTube">
           </a>
         </li>
       </ul>
@@ -252,7 +256,7 @@
 
       <a class="footer-developer" href="https://htmlacademy.ru/">
         <span class="visually-hidden">Сайт разработчика</span>
-        <img class="logo-html-academy" src="images/footer/logo-html-academy.svg" width="115" height="34" alt="Логотип HTML Academy">
+        <img class="logo-html-academy" src="images/svg/logo-html-academy.svg" width="115" height="34" alt="Логотип HTML Academy">
       </a>
 
     </footer>
