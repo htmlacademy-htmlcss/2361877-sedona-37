@@ -89,7 +89,8 @@ img {
 }
 
 .main-nav-link {
-  padding: 20px 16px;
+  padding-right: 16px;
+  padding-left: 16px;
 
   font-weight: 700;
   font-size: 20px;
