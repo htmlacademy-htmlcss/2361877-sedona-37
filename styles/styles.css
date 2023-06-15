@@ -146,15 +146,30 @@ img {
 
 .nav-button {
   width: 160px;
+  height: 36px;
+  margin-top: 14px;
 }
 
 .main-nav-list {
   display: flex;
+  justify-content: flex-start;
+  margin: 20px;
 }
 
-.main-nav-current {
-  margin-left: 28px;
+.main-nav {
+  display: flex;
+  flex-direction: row;
+
 }
+
+.main-nav-user {
+  display: flex;
+  justify-content: flex-end;
+}
+
+/*.main-nav-current {
+  margin-left: 28px;
+}*/
 
 .hero {
   position: relative;
