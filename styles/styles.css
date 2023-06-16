@@ -191,7 +191,7 @@ img {
 .main-nav-user {
   display: flex;
   flex-wrap: wrap;
-
+  align-items: center;
 }
 
 .user-link {
@@ -263,14 +263,13 @@ img {
 }
 
 /*ПРЕИМУЩЕСТВА*/
+.advantages-list {
+  display: flex;
+  flex-wrap: wrap;
+}
 
 .advantages-item {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-
   background-color: rgba(131, 179, 211, 0.2);
-  ;
 }
 
 .advantages-item:nth-child(2n) {
@@ -278,6 +277,8 @@ img {
 }
 
 .advantages-item-full {
+  width: 100%;
+
   color: #ffffff;
 
   background-color: #82b3d3;
@@ -288,6 +289,12 @@ img {
   min-height: 385px;
 
   text-align: center;
+}
+
+.advantages-container {
+  display: flex;
+  flex-wrap: wrap;
+  /*ДОБАВИТЬ СМЕНУ МЕСТА: КАРТИНКА-ТЕКСТ*/
 }
 
 .advantages-title {
@@ -312,6 +319,11 @@ img {
 }
 
 /*СЕРВИСЫ*/
+
+.services-list {
+  display: block;
+  flex-wrap: wrap;
+}
 
 .services-item {
   background-color: rgba(131, 179, 211, 0.12);
@@ -397,7 +409,15 @@ img {
   margin-bottom: 54px;
 }
 
+.subscribe-form {
+  display: flex;
+  flex-wrap: wrap;
+  width: 684px;
+  margin: 0 auto;
+}
+
 .subscribe-input {
+  width: 452px;
   height: 52px;
 
   border-radius: 4px 0 0 4px;
