@@ -294,7 +294,10 @@ img {
 .advantages-container {
   display: flex;
   flex-wrap: wrap;
-  /*ДОБАВИТЬ СМЕНУ МЕСТА: КАРТИНКА-ТЕКСТ*/
+}
+
+.advantages-item:last-child .advantages-container {
+  flex-direction: row-reverse;
 }
 
 .advantages-title {
@@ -321,7 +324,7 @@ img {
 /*СЕРВИСЫ*/
 
 .services-list {
-  display: block;
+  display: flex;
   flex-wrap: wrap;
 }
 
