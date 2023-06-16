@@ -527,16 +527,20 @@ img {
 .sorting {
   display: flex;
   flex-wrap: wrap;
-  padding: 0 70px;
+  align-items: center;
+  padding: 30px 70px;
 }
 
 .sorting-title {
+  display: block;
+  margin: auto;
+
   text-align: left;
 }
 
 .sorting-select {
   width: 292px;
-  height: 49px;
+  margin-right: 70px;
   padding: 5px;
 
   font-weight: 400;
@@ -554,6 +558,8 @@ img {
 .view {
   display: flex;
   flex-wrap: wrap;
+
+  gap: 8px;
 }
 
 .view-link {
@@ -588,6 +594,10 @@ img {
 /*КАРТОЧКИ ОТЕЛЕЙ*/
 
 .hotels {
+  padding: 0 70px;
+}
+
+.hotels-list {
   display: flex;
   flex-wrap: wrap;
 }
@@ -606,11 +616,11 @@ img {
 
 }
 
-.hotels-item p {
-  margin: 0;
+.hotels-item {
+  width: 340px;
 }
 
-.hotels-text + .hotels-text {
+.hotels-name + .hotels-text {
   text-align: right;
 }
 
