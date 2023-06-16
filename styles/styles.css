@@ -533,7 +533,7 @@ img {
 
 .sorting-title {
   display: block;
-  margin: auto;
+  margin-right: auto;
 
   text-align: left;
 }
