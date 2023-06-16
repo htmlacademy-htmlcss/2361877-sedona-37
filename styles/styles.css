@@ -153,11 +153,15 @@ img {
 
 /*ШАПКА*/
 
+.main-header {
+  padding: 0 70px;
+}
+
 .main-nav {
   display: flex;
   flex-wrap: wrap;
+  align-items: center;
   padding: 0 70px;
-
 }
 
 .logo {
@@ -167,24 +171,27 @@ img {
 .main-nav-list {
   display: flex;
   flex-wrap: wrap;
+  align-items: center;
   max-width: 550px;
   margin-right: auto;
 }
 
-.main-nav-user {
-  display: flex;
-  justify-content: flex-end;
+.main-nav-item {
+  padding: 0 16px;
 }
 
 .main-nav-link {
-  padding-right: 16px;
-  padding-left: 16px;
-
   font-weight: 700;
   font-size: 20px;
   line-height: 24px;
   color: #000000;
   text-decoration: none;
+}
+
+.main-nav-user {
+  display: flex;
+  flex-wrap: wrap;
+
 }
 
 .user-link {
@@ -209,8 +216,8 @@ img {
 
 .nav-button {
   width: 160px;
-  height: 36px;
-  margin-top: 14px;
+
+
 }
 
 /*БЛОК-ГЕРОЙ*/
