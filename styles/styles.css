@@ -80,41 +80,7 @@ img {
   list-style: none;
 }
 
-.main-header {
-  padding: 0 70px;
-}
-
-.logo {
-  margin-right: 44px;
-}
-
-.main-nav-link {
-  padding-right: 16px;
-  padding-left: 16px;
-
-  font-weight: 700;
-  font-size: 20px;
-  line-height: 24px;
-  color: #000000;
-  text-decoration: none;
-}
-
-.user-link {
-  display: inline-block;
-  width: 44px;
-  height: 44px;
-
-  color: #ffffff;
-  text-decoration: none;
-}
-
-.user-favorites-number {
-  font-size: 10px;
-  line-height: 10px;
-
-  background-color: #7db54f;
-  border-radius: 10px;
-}
+/*КНОПКИ*/
 
 .button {
   display: inline-block;
@@ -150,16 +116,22 @@ img {
   margin-top: 14px;
 }
 
-.main-nav-list {
-  display: flex;
-  justify-content: flex-start;
-  margin: 20px;
-}
-
 .main-nav {
   display: flex;
-  flex-direction: row;
+  flex-wrap: wrap;
+  padding: 0 70px;
 
+}
+
+.logo {
+  margin-right: 28px;
+}
+
+.main-nav-list {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 550px;
+  margin-right: auto;
 }
 
 .main-nav-user {
@@ -167,9 +139,36 @@ img {
   justify-content: flex-end;
 }
 
-/*.main-nav-current {
-  margin-left: 28px;
-}*/
+.main-nav-link {
+  padding-right: 16px;
+  padding-left: 16px;
+
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+  color: #000000;
+  text-decoration: none;
+}
+
+.user-link {
+  display: inline-block;
+  width: 44px;
+  height: 44px;
+
+  text-decoration: none;
+
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.user-favorites-number {
+  font-size: 10px;
+  line-height: 10px;
+  color: #ffffff;
+
+  background-color: #7db54f;
+  border-radius: 10px;
+}
 
 .hero {
   position: relative;
