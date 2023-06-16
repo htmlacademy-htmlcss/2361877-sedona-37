@@ -437,6 +437,34 @@ img {
 }
 
 /*Каталог*/
+/*ХЛЕБНЫЕ КРОШКИ*/
+
+.breadcrumbs-list {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.breadcrumbs-link {
+  font-size: 16px;
+  line-height: 21px;
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.breadcrumbs-link-home {
+  display: block;
+  width: 13px;
+  height: 15px;
+
+  background-image: url("../images/svg/breadcrumbs-home.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.breadcrumbs-link-current {
+  pointer-events: none;
+}
+
 /*ФИЛЬТР*/
 
 .filter {
@@ -458,9 +486,10 @@ img {
 }
 
 .filter-group {
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-start;
+  margin: 0;
+  padding: 0;
+
+  border: none;
 }
 
 .filter-group-check {
@@ -473,11 +502,9 @@ img {
   flex-direction: column;
 }
 
-.filter-group {
-  margin: 0;
-  padding: 0;
-
-  border: none;
+.filter-form {
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .filter-title {
@@ -489,29 +516,6 @@ img {
 .control-label {
   font-size: 18px;
   line-height: 23px;
-}
-
-/*ХЛЕБНЫЕ КРОШКИ*/
-
-.breadcrumbs-link {
-  font-size: 16px;
-  line-height: 21px;
-  color: #ffffff;
-  text-decoration: none;
-}
-
-.breadcrumbs-link-home {
-  display: block;
-  width: 13px;
-  height: 15px;
-
-  background-image: url("../images/svg/breadcrumbs-home.svg");
-  background-repeat: no-repeat;
-  background-position: center;
-}
-
-.breadcrumbs-link-current {
-  pointer-events: none;
 }
 
 /*СОРТИРОВКА*/
@@ -703,11 +707,10 @@ img {
 }
 
 .phone {
-  margin-top: 45px;
+  /*margin-top: 45px;
   margin-right: 235.5px;
   margin-bottom: 35px;
-  margin-left: 236.5px;
-
+  margin-left: 236.5px;*/
   font-weight: 400;
   font-size: 40px;
   line-height: 40px;
