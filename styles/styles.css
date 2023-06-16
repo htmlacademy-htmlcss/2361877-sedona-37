@@ -80,7 +80,7 @@ img {
   list-style: none;
 }
 
-/*КНОПКИ*/
+/*ОБЩЕЕ для всего документа*/
 
 .button {
   display: inline-block;
@@ -110,11 +110,48 @@ img {
   background-color: transparent;
 }
 
-.nav-button {
-  width: 160px;
-  height: 36px;
-  margin-top: 14px;
+.form-input {
+  width: 100%;
+  height: 48px;
+  padding: 10px;
+
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 24px;
+  font-family: "PT Sans", sans-serif;
+  color: #000000;
+
+  background-color: #f2f2f2;
+  border: 2px solid transparent;
+  border-radius: 4px;
 }
+
+.form-input::placeholder {
+  color: rgba(0, 0, 0, 0.6);
+
+  opacity: 1;
+}
+
+.page-title {
+  margin: 0;
+
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 36px;
+  text-align: center;
+  color: #000000;
+  text-transform: uppercase;
+}
+
+.page-text {
+  margin: 0;
+
+  font-size: 22px;
+  line-height: 26px;
+  text-align: center;
+}
+
+/*ШАПКА*/
 
 .main-nav {
   display: flex;
@@ -170,6 +207,14 @@ img {
   border-radius: 10px;
 }
 
+.nav-button {
+  width: 160px;
+  height: 36px;
+  margin-top: 14px;
+}
+
+/*БЛОК-ГЕРОЙ*/
+
 .hero {
   position: relative;
 
@@ -210,24 +255,7 @@ img {
   height: 100%;
 }
 
-.page-title {
-  margin: 0;
-
-  font-weight: 700;
-  font-size: 30px;
-  line-height: 36px;
-  text-align: center;
-  color: #000000;
-  text-transform: uppercase;
-}
-
-.page-text {
-  margin: 0;
-
-  font-size: 22px;
-  line-height: 26px;
-  text-align: center;
-}
+/*ПРЕИМУЩЕСТВА*/
 
 .advantages-item {
   display: flex;
@@ -276,6 +304,8 @@ img {
   height: 100%;
 }
 
+/*СЕРВИСЫ*/
+
 .services-item {
   background-color: rgba(131, 179, 211, 0.12);
 }
@@ -310,6 +340,8 @@ img {
 
 }
 
+/*ЗАИНТЕРЕСОВАЛИСЬ? ПОИСК ГОСТИНИЦ*/
+
 .search {
   padding: 96px 70px;
 
@@ -330,6 +362,8 @@ img {
   font-size: 20px;
   line-height: 36px;
 }
+
+/*ПОДПИСКА*/
 
 .subscribe {
   padding: 96px 70px;
@@ -356,28 +390,6 @@ img {
   margin-bottom: 54px;
 }
 
-.form-input {
-  width: 100%;
-  height: 48px;
-  padding: 10px;
-
-  font-weight: 700;
-  font-size: 18px;
-  line-height: 24px;
-  font-family: "PT Sans", sans-serif;
-  color: #000000;
-
-  background-color: #f2f2f2;
-  border: 2px solid transparent;
-  border-radius: 4px;
-}
-
-.form-input::placeholder {
-  color: rgba(0, 0, 0, 0.6);
-
-  opacity: 1;
-}
-
 .subscribe-input {
   height: 52px;
 
@@ -397,22 +409,8 @@ img {
   border-radius: 0 4px 4px 0;
 }
 
-.phone {
-  margin-top: 45px;
-  margin-right: 235.5px;
-  margin-bottom: 35px;
-  margin-left: 236.5px;
-
-  font-weight: 400;
-  font-size: 40px;
-  line-height: 40px;
-  text-align: center;
-  color: #000000;
-  text-transform: uppercase;
-  text-decoration: none;
-}
-
 /*Каталог*/
+/*ФИЛЬТР*/
 
 .filter {
   padding: 35px 70px;
@@ -448,6 +446,26 @@ img {
   flex-direction: column;
 }
 
+.filter-group {
+  margin: 0;
+  padding: 0;
+
+  border: none;
+}
+
+.filter-title {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+}
+
+.control-label {
+  font-size: 18px;
+  line-height: 23px;
+}
+
+/*ХЛЕБНЫЕ КРОШКИ*/
+
 .breadcrumbs-link {
   font-size: 16px;
   line-height: 21px;
@@ -469,23 +487,7 @@ img {
   pointer-events: none;
 }
 
-.filter-group {
-  margin: 0;
-  padding: 0;
-
-  border: none;
-}
-
-.filter-title {
-  font-weight: 700;
-  font-size: 20px;
-  line-height: 24px;
-}
-
-.control-label {
-  font-size: 18px;
-  line-height: 23px;
-}
+/*СОРТИРОВКА*/
 
 .sorting-title {
   text-align: left;
@@ -505,6 +507,8 @@ img {
   border: 2px solid #e5e5e5;
   border-radius: 4px;
 }
+
+/*ВНЕШНИЙ ВИД КАРТОЧЕК*/
 
 .view-link {
   display: block;
@@ -534,6 +538,8 @@ img {
   background-image: url("../images/svg/view-list.svg");
 
 }
+
+/*КАРТОЧКИ ОТЕЛЕЙ*/
 
 .hotels-link {
   color: #000000;
@@ -611,6 +617,8 @@ img {
   border-radius: 4px;
 }
 
+/*ПАГИНАЦИЯ*/
+
 .pagination-link {
   display: flex;
   justify-content: center;
@@ -640,7 +648,6 @@ img {
   pointer-events: none;
 }
 
-/* кнопка троеточия почему-то наследует цвет фона. хотя кнопка с цифрой 1 не наследовала*/
 .pagination-link-more {
   font-size: 22px;
   line-height: 26px;
@@ -649,6 +656,8 @@ img {
   background-color: transparent;
   border-color: transparent;
 }
+
+/*ФУТЕР*/
 
 .social-link {
   display: block;
@@ -663,5 +672,20 @@ img {
   line-height: 40px;
   text-align: center;
   color: #000000;
+  text-decoration: none;
+}
+
+.phone {
+  margin-top: 45px;
+  margin-right: 235.5px;
+  margin-bottom: 35px;
+  margin-left: 236.5px;
+
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 40px;
+  text-align: center;
+  color: #000000;
+  text-transform: uppercase;
   text-decoration: none;
 }
