@@ -520,6 +520,12 @@ img {
 
 /*СОРТИРОВКА*/
 
+.sorting {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 70px;
+}
+
 .sorting-title {
   text-align: left;
 }
@@ -540,6 +546,11 @@ img {
 }
 
 /*ВНЕШНИЙ ВИД КАРТОЧЕК*/
+
+.view {
+  display: flex;
+  flex-wrap: wrap;
+}
 
 .view-link {
   display: block;
@@ -571,6 +582,11 @@ img {
 }
 
 /*КАРТОЧКИ ОТЕЛЕЙ*/
+
+.hotels {
+  display: flex;
+  flex-wrap: wrap;
+}
 
 .hotels-link {
   color: #000000;
@@ -650,12 +666,15 @@ img {
 
 /*ПАГИНАЦИЯ*/
 
-.pagination-link {
+.pagination {
   display: flex;
-  justify-content: center;
-  align-items: center;
-  min-width: 60px;
-  min-height: 60px;
+  flex-wrap: wrap;
+
+}
+
+.pagination-link {
+  width: 60px;
+  height: 60px;
   padding: 5px;
 
   font-weight: 700;
@@ -690,6 +709,12 @@ img {
 
 /*ФУТЕР*/
 
+.main-footer {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 30px 70px;
+}
+
 .social-link {
   display: block;
   width: 48px;
@@ -707,10 +732,8 @@ img {
 }
 
 .phone {
-  /*margin-top: 45px;
-  margin-right: 235.5px;
-  margin-bottom: 35px;
-  margin-left: 236.5px;*/
+  margin: 0 auto;
+
   font-weight: 400;
   font-size: 40px;
   line-height: 40px;
