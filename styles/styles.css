@@ -349,7 +349,7 @@ img {
 .services-content {
   width: 400px;
   min-height: 385px;
-  padding-top: 184px;
+  padding: 81px 85px;
 
   text-align: center;
 
