@@ -161,7 +161,7 @@ img {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
-  padding: 0 70px;
+  /*padding: 0 70px;*/
 }
 
 .logo {
@@ -197,7 +197,7 @@ img {
 .user-link {
   display: inline-block;
   width: 44px;
-  height: 44px;
+  margin: 0;
 
   text-decoration: none;
 
@@ -216,8 +216,7 @@ img {
 
 .nav-button {
   width: 160px;
-
-
+  margin-left: 20px;
 }
 
 /*БЛОК-ГЕРОЙ*/
@@ -350,17 +349,14 @@ img {
 
 .services-content-home {
   background-image: url("../images/svg/home.svg");
-
 }
 
 .services-content-souvenirs {
   background-image: url("../images/svg/souvenires.svg");
-
 }
 
 .services-content-food {
   background-image: url("../images/svg/food.svg");
-
 }
 
 /*ЗАИНТЕРЕСОВАЛИСЬ? ПОИСК ГОСТИНИЦ*/
@@ -579,7 +575,6 @@ img {
 
 .view-link-tile {
   background-image: url("../images/svg/view-tile.svg");
-
 }
 
 .view-link-preview {
@@ -588,7 +583,6 @@ img {
 
 .view-link-list {
   background-image: url("../images/svg/view-list.svg");
-
 }
 
 /*КАРТОЧКИ ОТЕЛЕЙ*/
@@ -613,7 +607,6 @@ img {
   font-weight: 700;
   font-size: 24px;
   line-height: 28px;
-
 }
 
 .hotels-item {
