@@ -45,7 +45,7 @@ body {
   font-family: "PT Sans", "Arial", sans-serif;
   color: #333333;
 
-  background-color: #f2f2f2;
+  background-color: #ffffff;
   box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
 }
 
@@ -80,30 +80,7 @@ img {
   list-style: none;
 }
 
-.main-header {
-  padding: 0 70px;
-}
-
-.logo {
-  margin-right: 44px;
-}
-
-.main-nav-link {
-  font-weight: 700;
-  font-size: 20px;
-  line-height: 24px;
-  color: #000000;
-  text-decoration: none;
-}
-
-.user-link {
-  display: inline-block;
-  width: 44px;
-  height: 44px;
-
-  color: #ffffff;
-  text-decoration: none;
-}
+/*ОБЩЕЕ для всего документа*/
 
 .button {
   display: inline-block;
@@ -133,31 +110,26 @@ img {
   background-color: transparent;
 }
 
-.nav-button {
-  width: 160px;
-}
-
-.hero {
-  padding: 50px 70px;
-
-  color: #ffffff;
-
-  background-color: #5c84ab;
-  background-image: url("../images/main-background.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
-.hero-img {
-  width: 458px;
-  height: 352px;
-  margin: 0 auto;
-}
-
-.hero-img img {
-  display: block;
+.form-input {
   width: 100%;
-  height: 100%;
+  height: 48px;
+  padding: 10px;
+
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 24px;
+  font-family: "PT Sans", sans-serif;
+  color: #000000;
+
+  background-color: #f2f2f2;
+  border: 2px solid transparent;
+  border-radius: 4px;
+}
+
+.form-input::placeholder {
+  color: rgba(0, 0, 0, 0.6);
+
+  opacity: 1;
 }
 
 .page-title {
@@ -179,6 +151,123 @@ img {
   text-align: center;
 }
 
+/*ШАПКА*/
+
+.main-header {
+  padding: 0 70px;
+}
+
+.main-nav {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  padding: 0 70px;
+}
+
+.logo {
+  margin-right: 28px;
+}
+
+.main-nav-list {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  max-width: 550px;
+  margin-right: auto;
+}
+
+.main-nav-item {
+  padding: 0 16px;
+}
+
+.main-nav-link {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+  color: #000000;
+  text-decoration: none;
+}
+
+.main-nav-user {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.user-link {
+  display: inline-block;
+  width: 44px;
+  height: 44px;
+
+  text-decoration: none;
+
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.user-favorites-number {
+  font-size: 10px;
+  line-height: 10px;
+  color: #ffffff;
+
+  background-color: #7db54f;
+  border-radius: 10px;
+}
+
+.nav-button {
+  width: 160px;
+
+
+}
+
+/*БЛОК-ГЕРОЙ*/
+
+.hero {
+  position: relative;
+
+  padding: 50px 70px;
+
+  text-align: center;
+  color: #ffffff;
+
+  background-color: #5c84ab;
+  background-image: url("../images/main-background.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.hero::after {
+  content: "";
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+
+  width: 100%;
+  height: 57px;
+
+  background-image: url("../images/svg/hero-divider.svg");
+  background-repeat: no-repeat;
+}
+
+.hero-img {
+  width: 458px;
+  height: 352px;
+  margin: 0 auto;
+}
+
+.hero-img img {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+/*ПРЕИМУЩЕСТВА*/
+.advantages-list {
+  display: flex;
+  flex-wrap: wrap;
+}
+
 .advantages-item {
   background-color: rgba(131, 179, 211, 0.2);
 }
@@ -188,6 +277,8 @@ img {
 }
 
 .advantages-item-full {
+  width: 100%;
+
   color: #ffffff;
 
   background-color: #82b3d3;
@@ -196,8 +287,18 @@ img {
 .advantages-content {
   width: 400px;
   min-height: 385px;
+  padding-top: 112.5px;
 
   text-align: center;
+}
+
+.advantages-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.advantages-item:last-child .advantages-container {
+  flex-direction: row-reverse;
 }
 
 .advantages-title {
@@ -219,6 +320,13 @@ img {
   display: block;
   width: 100%;
   height: 100%;
+}
+
+/*СЕРВИСЫ*/
+
+.services-list {
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .services-item {
@@ -255,6 +363,8 @@ img {
 
 }
 
+/*ЗАИНТЕРЕСОВАЛИСЬ? ПОИСК ГОСТИНИЦ*/
+
 .search {
   padding: 96px 70px;
 
@@ -275,6 +385,8 @@ img {
   font-size: 20px;
   line-height: 36px;
 }
+
+/*ПОДПИСКА*/
 
 .subscribe {
   padding: 96px 70px;
@@ -301,29 +413,15 @@ img {
   margin-bottom: 54px;
 }
 
-.form-input {
-  width: 100%;
-  height: 48px;
-  padding: 10px;
-
-  font-weight: 700;
-  font-size: 18px;
-  line-height: 24px;
-  font-family: "PT Sans", sans-serif;
-  color: #000000;
-
-  background-color: #f2f2f2;
-  border: 2px solid transparent;
-  border-radius: 4px;
-}
-
-.form-input::placeholder {
-  color: rgba(0, 0, 0, 0.6);
-
-  opacity: 1;
+.subscribe-form {
+  display: flex;
+  flex-wrap: wrap;
+  width: 684px;
+  margin: 0 auto;
 }
 
 .subscribe-input {
+  width: 452px;
   height: 52px;
 
   border-radius: 4px 0 0 4px;
@@ -342,39 +440,12 @@ img {
   border-radius: 0 4px 4px 0;
 }
 
-.phone {
-  margin-top: 45px;
-  margin-right: 235.5px;
-  margin-bottom: 35px;
-  margin-left: 236.5px;
-
-  font-weight: 400;
-  font-size: 40px;
-  line-height: 40px;
-  text-align: center;
-  color: #000000;
-  text-transform: uppercase;
-  text-decoration: none;
-}
-
 /*Каталог*/
+/*ХЛЕБНЫЕ КРОШКИ*/
 
-.filter {
-  padding: 35px 70px;
-
-  color: #ffffff;
-
-  background-color: #5c84ab;
-  background-image: url("../images/catalog/catalog-background.jpeg");
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
-.filter-page-title {
-  margin: 0;
-
-  font-size: 60px;
-  line-height: 78px;
+.breadcrumbs-list {
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .breadcrumbs-link {
@@ -398,11 +469,46 @@ img {
   pointer-events: none;
 }
 
+/*ФИЛЬТР*/
+
+.filter {
+  padding: 35px 70px;
+
+  color: #ffffff;
+
+  background-color: #5c84ab;
+  background-image: url("../images/catalog/catalog-background.jpeg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.filter-page-title {
+  margin: 0;
+
+  font-size: 60px;
+  line-height: 78px;
+}
+
 .filter-group {
   margin: 0;
   padding: 0;
 
   border: none;
+}
+
+.filter-group-check {
+  display: flex;
+  flex-direction: column;
+}
+
+.filter-group-radio {
+  display: flex;
+  flex-direction: column;
+}
+
+.filter-form {
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .filter-title {
@@ -416,13 +522,25 @@ img {
   line-height: 23px;
 }
 
+/*СОРТИРОВКА*/
+
+.sorting {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  padding: 30px 70px;
+}
+
 .sorting-title {
+  display: block;
+  margin-right: auto;
+
   text-align: left;
 }
 
 .sorting-select {
   width: 292px;
-  height: 49px;
+  margin-right: 70px;
   padding: 5px;
 
   font-weight: 400;
@@ -433,6 +551,15 @@ img {
 
   border: 2px solid #e5e5e5;
   border-radius: 4px;
+}
+
+/*ВНЕШНИЙ ВИД КАРТОЧЕК*/
+
+.view {
+  display: flex;
+  flex-wrap: wrap;
+
+  gap: 8px;
 }
 
 .view-link {
@@ -464,6 +591,17 @@ img {
 
 }
 
+/*КАРТОЧКИ ОТЕЛЕЙ*/
+
+.hotels {
+  padding: 0 70px;
+}
+
+.hotels-list {
+  display: flex;
+  flex-wrap: wrap;
+}
+
 .hotels-link {
   color: #000000;
   text-decoration: none;
@@ -478,11 +616,11 @@ img {
 
 }
 
-.hotels-item p {
-  margin: 0;
+.hotels-item {
+  width: 340px;
 }
 
-.hotels-text + .hotels-text {
+.hotels-name + .hotels-text {
   text-align: right;
 }
 
@@ -540,13 +678,25 @@ img {
   border-radius: 4px;
 }
 
+/*ПАГИНАЦИЯ*/
+
+.pagination {
+  padding: 40px 70px;
+}
+
+.pagination-list {
+  display: flex;
+  flex-wrap: wrap;
+
+  gap: 8px;
+}
+
 .pagination-link {
   display: flex;
   justify-content: center;
   align-items: center;
   min-width: 60px;
   min-height: 60px;
-  padding: 5px;
 
   font-weight: 700;
   font-size: 20px;
@@ -569,14 +719,28 @@ img {
   pointer-events: none;
 }
 
-/* кнопка троеточия почему-то наследует цвет фона. хотя кнопка с цифрой 1 не наследовала*/
 .pagination-link-more {
+  margin: 0;
+
   font-size: 22px;
   line-height: 26px;
   color: #000000;
 
   background-color: transparent;
   border-color: transparent;
+}
+
+/*ФУТЕР*/
+
+.main-footer {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 30px 70px;
+}
+
+.social-list {
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .social-link {
@@ -592,5 +756,17 @@ img {
   line-height: 40px;
   text-align: center;
   color: #000000;
+  text-decoration: none;
+}
+
+.phone {
+  margin: 0 auto;
+
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 40px;
+  text-align: center;
+  color: #000000;
+  text-transform: uppercase;
   text-decoration: none;
 }
