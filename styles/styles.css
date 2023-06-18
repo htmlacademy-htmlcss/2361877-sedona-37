@@ -521,11 +521,36 @@ img {
 .filter-group-check {
   display: flex;
   flex-direction: column;
+  padding-top: 40px;
+  padding-right: 70px;
+  padding-bottom: 73px;
+
+  gap: 32px;
 }
 
 .filter-group-radio {
   display: flex;
   flex-direction: column;
+  padding-top: 40px;
+  padding-right: 140.15px;
+  padding-bottom: 73px;
+
+  gap: 32px;
+}
+
+.filter-group-range {
+  display: flex;
+  flex-wrap: wrap;
+  padding-top: 40px;
+  padding-right: 70px;
+  padding-bottom: 73px;
+}
+
+.filter-group-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  padding-top: 96px;
+  padding-bottom: 70px;
 }
 
 .filter-form {
