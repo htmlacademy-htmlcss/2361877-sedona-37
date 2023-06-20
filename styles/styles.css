@@ -154,6 +154,9 @@ img {
 /*ШАПКА*/
 
 .main-header {
+  position: relative;
+  z-index: 1;
+
   padding: 0 70px;
 }
 
@@ -161,26 +164,27 @@ img {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
-  /*padding: 0 70px;*/
+  padding: 0 70px;
 }
 
 .logo {
   margin-right: 28px;
+  margin-bottom: -6px;
 }
 
 .main-nav-list {
   display: flex;
   flex-wrap: wrap;
-  align-items: center;
   max-width: 550px;
   margin-right: auto;
-}
 
-.main-nav-item {
-  padding: 0 16px;
+  gap: 32px;
 }
 
 .main-nav-link {
+  display: inline-block;
+  padding: 20px 0;
+
   font-weight: 700;
   font-size: 20px;
   line-height: 24px;
@@ -188,15 +192,30 @@ img {
   text-decoration: none;
 }
 
+.main-nav-current {
+  text-decoration: 2px;
+
+  border-color: #756157;
+
+  text-decoration-color: #756157;
+  text-decoration-line: underline;
+  text-decoration-style: solid;
+  text-underline-offset: 24px;
+
+}
+
 .main-nav-user {
   display: flex;
   flex-wrap: wrap;
-  align-items: center;
+
 }
 
 .user-link {
+  position: relative;
+
   display: inline-block;
-  width: 44px;
+  min-width: 44px;
+  min-height: 44px;
   margin: 0;
 
   text-decoration: none;
@@ -206,6 +225,13 @@ img {
 }
 
 .user-favorites-number {
+  position: absolute;
+  top: 0;
+  right: 4px;
+
+  display: inline-block;
+  padding: 2px;
+
   font-size: 10px;
   line-height: 10px;
   color: #ffffff;
@@ -262,6 +288,16 @@ img {
 }
 
 /*ПРЕИМУЩЕСТВА*/
+
+.advantages-description {
+  padding: 69px 70px;
+
+}
+
+.advantages-description-title {
+  margin-bottom: 25px;
+}
+
 .advantages-list {
   display: flex;
   flex-wrap: wrap;
@@ -296,6 +332,10 @@ img {
   flex-wrap: wrap;
 }
 
+.advantages-container .advantages-content {
+  padding-top: 105px;
+}
+
 .advantages-item:last-child .advantages-container {
   flex-direction: row-reverse;
 }
@@ -306,6 +346,9 @@ img {
 }
 
 .advantages-title {
+  width: 175px;
+  margin: 0 0 30px;
+
   font-size: 24px;
   line-height: 28px;
   color: #000000;
@@ -333,6 +376,10 @@ img {
   padding-bottom: 64px;
 }
 
+.services-description-title {
+  margin-bottom: 20px;
+}
+
 .services-list {
   display: flex;
   flex-wrap: wrap;
@@ -349,7 +396,7 @@ img {
 .services-content {
   width: 400px;
   min-height: 385px;
-  padding: 81px 85px;
+  padding: 183px 85px 81px;
 
   text-align: center;
 
