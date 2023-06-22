@@ -687,10 +687,15 @@ img {
 }
 
 .hotels-list {
-  display: flex;
-  flex-wrap: wrap;
+  /*display: flex;
+  flex-wrap: wrap;*/
+  display: grid;
+  padding-bottom: 40px;
 
   border-bottom: 1px solid #e6e6e6;
+
+  gap: 20px;
+  grid-template-columns: repeat(3, 340px);
 }
 
 .hotels-img {
@@ -721,18 +726,17 @@ img {
 
 .hotels-item {
   width: 340px;
-  margin-right: 20px;
+  /*margin-right: 20px;*/
   padding: 20px;
 
   border: 1px solid #e6e6e6;
   border-radius: 4px;
-
-  gap: 20px;
 }
 
-.hotels-item:nth-child(3n) {
+/*.hotels-item:nth-child(3n) {
   margin-right: 0;
 }
+*/
 
 .hotels-text {
   text-align: right;
@@ -797,10 +801,6 @@ img {
 }
 
 /*ПАГИНАЦИЯ*/
-
-/*.pagination {
-  padding: 40px;
-}*/
 
 .pagination-list {
   display: flex;
