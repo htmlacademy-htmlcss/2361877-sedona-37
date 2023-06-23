@@ -161,30 +161,39 @@ img {
 }
 
 .main-nav {
-  display: flex;
+  /*display: flex;
   flex-wrap: wrap;
-  align-items: center;
+  align-items: center;*/
+  display: grid;
+
+  grid-template-columns: 138px 624px 88px 180px;
 
 }
 
 .logo {
-  margin-right: 28px;
+  width: 140px;
+  height: 70px;
   margin-bottom: -6px;
 }
 
 .main-nav-list {
-  display: flex;
+  /*display: flex;
   flex-wrap: wrap;
   max-width: 550px;
-  margin-right: auto;
+  margin-right: auto;*/
+  display: grid;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  margin-left: 46px;
 
-  gap: 32px;
+  gap: 16px;
+  grid-template-columns: 100px 114px 125px;
+
 }
 
 .main-nav-link {
-  display: inline-block;
-  padding: 20px 0;
-
+  /*display: inline-block;
+  padding: 20px 0;*/
   font-weight: 700;
   font-size: 20px;
   line-height: 24px;
@@ -205,27 +214,30 @@ img {
 }
 
 .main-nav-user {
-  display: flex;
-  flex-wrap: wrap;
+  /*display: flex;
+  flex-wrap: wrap;*/
+  display: grid;
+  justify-content: center;
+  align-self: center;
+
+  grid-column: 3;
+  grid-template-columns: repeat(2, 44px);
 
 }
 
 .user-link {
-  display: flex;
+  /*display: flex;
   justify-content: center;
   align-items: center;
   min-width: 44px;
-  min-height: 44px;
-
+  min-height: 44px;*/
   text-decoration: none;
-
-
 }
 
 .user-favorites-number {
   position: absolute;
   top: 11px;
-  right: 254px;
+  right: 295px;
 
   display: inline-block;
   padding: 4px;
@@ -237,11 +249,17 @@ img {
 
   background-color: #7db54f;
   border-radius: 10px;
+
+  grid-column: 3;
+
 }
 
 .nav-button {
+  align-self: center;
   width: 160px;
-  margin-left: 20px;
+
+  grid-column: 4;
+  justify-self: end;
 }
 
 /*БЛОК-ГЕРОЙ*/
