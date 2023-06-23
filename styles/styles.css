@@ -353,6 +353,7 @@ img {
 .advantages-container {
   display: flex;
   flex-wrap: wrap;
+
 }
 
 .advantages-container .advantages-content {
@@ -381,6 +382,10 @@ img {
   text-transform: uppercase;
 }
 
+.advantages-container .advantages-title::after {
+  background-color: #ffffff;
+}
+
 .advantages-title::after {
   content: "";
   position: absolute;
@@ -390,7 +395,7 @@ img {
   width: 60px;
   height: 2px;
 
-  background-color: #ffffff;
+  background-color: #000000;
   transform: translateX(-50%);
   opacity: 0.3;
 
