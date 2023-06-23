@@ -165,9 +165,9 @@ img {
   flex-wrap: wrap;
   align-items: center;*/
   display: grid;
+  /*grid-template-columns: 138px 624px 88px 180px;*/
 
-  grid-template-columns: 138px 624px 88px 180px;
-
+  grid-template-columns: auto 1fr auto auto;
 }
 
 .logo {
@@ -177,17 +177,21 @@ img {
 }
 
 .main-nav-list {
-  /*display: flex;
+  display: flex;
   flex-wrap: wrap;
+  align-items: center;
   max-width: 550px;
-  margin-right: auto;*/
-  display: grid;
-  margin-top: 20px;
+  margin-right: auto;
+  padding-left: 30px;
+
+  gap: 32px;
+
+  /*margin-top: 20px;
   margin-bottom: 20px;
   margin-left: 46px;
-
+  display: grid;
   gap: 16px;
-  grid-template-columns: 100px 114px 125px;
+  grid-template-columns: 100px 114px 125px;*/
 
 }
 
@@ -237,7 +241,7 @@ img {
 .user-favorites-number {
   position: absolute;
   top: 11px;
-  right: 295px;
+  right: 246px;
 
   display: inline-block;
   padding: 4px;
@@ -255,10 +259,12 @@ img {
 }
 
 .nav-button {
+  /*align-self: center;
+  grid-column: 4;
+  justify-self: end;*/
   align-self: center;
   width: 160px;
 
-  grid-column: 4;
   justify-self: end;
 }
 
