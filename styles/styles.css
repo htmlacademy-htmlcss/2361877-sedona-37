@@ -709,7 +709,7 @@ img {
   border: 1px solid #e6e6e6;
   border-radius: 4px;
 
-  grid-template-columns: 150px 150px;
+  grid-template-columns: 140px 140px;
   row-gap: 20px;
 }
 
@@ -748,16 +748,27 @@ img {
 }
 
 .hotels-text {
-  text-align: right;
+  margin: 0;
+}
 
+.hotels-text-name {
+  justify-self: start;
+}
 
+.hotels-text-price {
+  justify-self: end;
 }
 
 .hotels-button {
+  width: 140px;
   margin: 0 auto;
+
+  justify-self: stretch;
 }
 
 .hotels-rating {
+  width: 140px;
+  margin: 0;
   padding-top: 9px;
   padding-right: 22px;
   padding-bottom: 8px;
@@ -780,6 +791,8 @@ img {
 
 .hotels-rating-star {
   height: 37px;
+  margin-top: 0;
+  margin-bottom: 0;
 
   background-image: url("../images/svg/stars-4.svg");
   background-repeat: no-repeat;
@@ -796,19 +809,6 @@ img {
 
 .hotels-rating-star-2 {
   width: 50px;
-}
-
-.hotels-rating-text {
-  display: inline-block;
-  padding: 10px;
-
-  font-size: 16px;
-  line-height: 20px;
-  text-align: center;
-  text-transform: uppercase;
-
-  background-color: #f2f2f2;
-  border-radius: 4px;
 }
 
 /*ПАГИНАЦИЯ*/
