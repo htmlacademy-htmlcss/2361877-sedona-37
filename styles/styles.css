@@ -664,20 +664,29 @@ img {
   line-height: 23px;
 }
 
+.filter-group-range {
+  padding-left: 140px;
+}
+
 .filter-group-buttons {
   display: flex;
   flex-direction: column;
   width: 191px;
   padding-top: 56px;
+
+  gap: 32px;
 }
 
 /*СОРТИРОВКА*/
 
 .sorting {
-  display: flex;
+  /*display: flex;
   flex-wrap: wrap;
-  align-items: center;
+  align-items: center;*/
+  display: grid;
   padding: 30px 70px;
+
+  grid-template-columns: 538px 292px 230px;
 }
 
 .sorting-title {
@@ -701,6 +710,10 @@ img {
 
   border: 2px solid #e5e5e5;
   border-radius: 4px;
+}
+
+.view {
+  justify-self: end;
 }
 
 /*ВНЕШНИЙ ВИД КАРТОЧЕК*/
