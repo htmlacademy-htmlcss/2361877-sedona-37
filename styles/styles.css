@@ -923,9 +923,12 @@ img {
 /*ФУТЕР*/
 
 .main-footer {
-  display: flex;
-  flex-wrap: wrap;
+  /*display: flex;
+  flex-wrap: wrap;*/
+  display: grid;
   padding: 30px 70px;
+
+  grid-template-columns: 184px 720px 157px;
 }
 
 .social-list {
@@ -933,6 +936,8 @@ img {
   flex-wrap: wrap;
   align-items: center;
   max-width: 150px;
+
+  justify-self: start;
 }
 
 .social-link {
@@ -953,4 +958,10 @@ img {
   color: #000000;
   text-transform: uppercase;
   text-decoration: none;
+
+  justify-self: center;
+}
+
+.footer-developer {
+  justify-self: end;
 }
