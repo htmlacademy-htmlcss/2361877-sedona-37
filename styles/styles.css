@@ -304,12 +304,9 @@ img {
 }
 
 .advantages-list {
-  /*display: flex;
-  flex-wrap: wrap;*/
   display: grid;
 
   grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: repeat(3, auto);
 }
 
 .advantages-item {
@@ -327,21 +324,20 @@ img {
   background-color: #82b3d3;
 
   grid-column: 1/-1;
-  /*width: 100%;*/
 
 }
 
 .advantages-content {
-  width: 400px;
+  max-width: 400px;
   min-height: 385px;
-  padding: 102px 85px;
+  padding: 102px 82px;
 
   text-align: center;
 }
 
 .advantages-container {
   display: flex;
-  flex-wrap: nowrap;
+  flex-wrap: wrap;
 }
 
 .advantages-container .advantages-content {
@@ -350,11 +346,6 @@ img {
 
 .advantages-item:last-child .advantages-container {
   flex-direction: row-reverse;
-}
-
-.advantages-description {
-  padding-top: 69px;
-  padding-bottom: 90px;
 }
 
 .advantages-title {
@@ -394,7 +385,6 @@ img {
 }
 
 .advantages-text {
-  width: 230px;
   margin: 0;
 
 }
@@ -418,11 +408,9 @@ img {
 }
 
 .services-list {
-  /*display: flex;
-  flex-wrap: wrap;*/
   display: grid;
 
-  grid-template-columns: auto auto auto;
+  grid-template-columns: repeat(3, 1fr);
 }
 
 .services-item {
@@ -434,9 +422,9 @@ img {
 }
 
 .services-content {
-  width: 400px;
+  max-width: 400px;
   min-height: 385px;
-  padding: 183px 85px 81px;
+  padding: 183px 82px 81px;
 
   text-align: center;
 
@@ -488,9 +476,10 @@ img {
 }
 
 /*ПОДПИСКА*/
+/*ОШИБКА ОШИБКА ОШИБКА*/
 
 .subscribe {
-  padding: 96px 258px 104px;
+  padding: 96px 70px 104px;
 }
 
 .subscribe-main {
@@ -515,18 +504,15 @@ img {
 }
 
 .subscribe-form {
-  /*display: flex;
-  flex-wrap: wrap;
-  width: 684px;*/
   display: grid;
+  width: 684px;
+  margin: 0 auto;
 
-  grid-template-columns: 452px 232px;
-  /*margin: 0 258px;*/
+  grid-template-columns: 1fr auto;
 
 }
 
 .subscribe-input {
-  /*width: 452px;*/
   height: 52px;
 
   border-radius: 4px 0 0 4px;
@@ -534,12 +520,11 @@ img {
 
 .subscribe-input::placeholder {
   font-weight: 400;
-
-  opacity: 0.6;
 }
 
 .subscribe-button {
-  /*width: 232px;*/
+  width: 232px;
+
   font-size: 20px;
   line-height: 36px;
 
