@@ -165,17 +165,15 @@ img {
 }
 
 .main-nav {
-  /*display: flex;
-  flex-wrap: wrap;
-  align-items: center;*/
   display: grid;
-  /*grid-template-columns: 138px 624px 88px 180px;*/
   align-items: center;
 
-  grid-template-columns: auto 1fr auto auto;
+  gap: 24px;
+  grid-template-columns: 140px 1fr auto 160px;
 }
 
 .logo {
+  display: block;
   width: 140px;
   height: 70px;
   margin-bottom: -6px;
@@ -186,23 +184,15 @@ img {
   flex-wrap: wrap;
   align-items: center;
   max-width: 550px;
-  margin-right: auto;
-  padding-left: 30px;
+  margin-left: -2px;
 
   gap: 32px;
-
-  /*margin-top: 20px;
-  margin-bottom: 20px;
-  margin-left: 46px;
-  display: grid;
-  gap: 16px;
-  grid-template-columns: 100px 114px 125px;*/
-
+  /*ПЕРЕСМОТРЕТЬ ЭФИР ПРОВЕРИТЬ*/
 }
 
 .main-nav-link {
-  /*display: inline-block;
-  padding: 20px 0;*/
+  display: inline-block;
+
   font-weight: 700;
   font-size: 20px;
   line-height: 24px;
@@ -223,30 +213,29 @@ img {
 }
 
 .main-nav-user {
-  /*display: flex;
-  flex-wrap: wrap;*/
   display: grid;
-  justify-content: center;
   align-self: center;
 
-  grid-column: 3;
-  grid-template-columns: repeat(2, 44px);
+  grid-template-columns: repeat(2, auto);
 
 }
 
 .user-link {
-  /*display: flex;
+  position: relative;
+
+  display: flex;
   justify-content: center;
   align-items: center;
-  min-width: 44px;
-  min-height: 44px;*/
+  width: 44px;
+  height: 44px;
+
   text-decoration: none;
 }
 
 .user-favorites-number {
   position: absolute;
-  top: 11px;
-  right: 246px;
+  top: 2px;
+  right: 4px;
 
   display: inline-block;
   padding: 4px;
@@ -258,17 +247,6 @@ img {
 
   background-color: #7db54f;
   border-radius: 10px;
-
-  grid-column: 3;
-
-}
-
-.nav-button {
-  /*align-self: center;
-  grid-column: 4;
-  justify-self: end;*/
-  width: 160px;
-
 
 }
 
