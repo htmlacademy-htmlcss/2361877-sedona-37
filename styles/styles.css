@@ -476,7 +476,6 @@ img {
 }
 
 /*ПОДПИСКА*/
-/*ОШИБКА ОШИБКА ОШИБКА*/
 
 .subscribe {
   padding: 96px 70px 104px;
@@ -560,6 +559,12 @@ img {
   align-items: center;
   margin-top: 8px;
   margin-bottom: 40px;
+}
+
+.breadcrumbs-item:not(:last-child) {
+  position: relative;
+
+  margin-right: 28px;
 }
 
 .breadcrumbs-link {
