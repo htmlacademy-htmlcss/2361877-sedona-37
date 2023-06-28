@@ -585,22 +585,27 @@ img {
   background-position: center;
 }
 
-/*.breadcrumbs-arrow {
-  width: 8px;
-  height: 20px;
-
-
-  background-image: url("../images/svg/breadcrumbs-arrow.svg");
-}
-*/
-
 .breadcrumbs-link-current {
+  position: relative;
+
   display: block;
 
   background-repeat: no-repeat;
   background-position: center;
 
   pointer-events: none;
+}
+
+.breadcrumbs-link-current::before {
+  content: "";
+  position: absolute;
+  right: 20px;
+
+  width: 100%;
+  height: 100%;
+
+  background-image: url("../images/png/breadcrumbs-arrow.png");
+  background-repeat: no-repeat;
 }
 
 /*Фильтр столбики - инфраструктура, тип и тд*/
