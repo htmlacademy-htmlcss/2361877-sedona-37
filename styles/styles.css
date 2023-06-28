@@ -110,8 +110,45 @@ img {
   background-color: #82b3d3;
 }
 
+.button-light:hover {
+  background-color: #68a2ca;
+}
+
+.button-light:focus {
+  background-color: #68a2ca;
+}
+
+.button-light:active {
+  color: rgba(255, 255, 255, 0.3);
+}
+
+.button-light:disabled {
+  background-color: #e5e5e5;
+}
+
 .button-transparent {
   background-color: transparent;
+}
+
+.button-transparent:hover {
+  border: transparent;
+  opacity: 0.6;
+}
+
+.button-transparent:focus {
+  border: #83b3d3 solid 3px;
+  border-radius: 4px;
+  /* обводка черная, если переключаться клавиатурой*/
+}
+
+.button-transparent:active {
+  border: transparent;
+  opacity: 0.1;
+}
+
+.button-transparent:disabled {
+  border: transparent;
+  opacity: 0.3;
 }
 
 .form-input {
@@ -237,7 +274,15 @@ img {
 }
 
 .user-link:hover {
+  opacity: 0.7;
+}
+
+.user-link:active {
   opacity: 0.3;
+}
+
+.user-link:focus {
+  opacity: 0.5;
 }
 
 /*цифра и кружок тоже просвечивают, поправить!*/
@@ -258,6 +303,20 @@ img {
   background-color: #7db54f;
   border-radius: 10px;
 
+}
+
+.nav-button:hover {
+  background-color: #615048;
+}
+
+.nav-button:active {
+  color: rgba(255, 255, 255, 0.3);
+
+  background-color: #756157;
+}
+
+.nav-button:disabled {
+  background-color: #e5e5e5;
 }
 
 /*БЛОК-ГЕРОЙ*/
@@ -483,6 +542,20 @@ img {
 
   font-size: 20px;
   line-height: 36px;
+}
+
+.search-button:hover {
+  background-color: #615048;
+}
+
+.search-button:active {
+  color: rgba(255, 255, 255, 0.3);
+
+  background-color: #756157;
+}
+
+.search-button:disabled {
+  background-color: #e5e5e5;
 }
 
 /*ПОДПИСКА*/
@@ -793,6 +866,20 @@ img {
   text-align: right;
 }
 
+.hotels-button-more:hover {
+  background-color: #615048;
+}
+
+.hotels-button-more:active {
+  color: rgba(255, 255, 255, 0.3);
+
+  background-color: #756157;
+}
+
+.hotels-button-more:disabled {
+  background-color: #e5e5e5;
+}
+
 .hotels-rating {
   padding: 9px 9px 8px;
 
@@ -809,6 +896,22 @@ img {
 
 .hotels-favorites-active {
   background-color: #7db54f;
+}
+
+.hotels-favorites-active:hover {
+  background-color: #6c9e42;
+}
+
+.hotels-favorites-active:focus {
+  background-color: #6c9e42;
+}
+
+.hotels-favorites-active:active {
+  color: rgba(255, 255, 255, 0.3);
+}
+
+.hotels-favorites-active:disabled {
+  background-color: #e5e5e5;
 }
 
 .hotels-rating-star {
