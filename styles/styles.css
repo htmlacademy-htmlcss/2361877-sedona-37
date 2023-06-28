@@ -767,6 +767,20 @@ img {
   border-radius: 4px;
 }
 
+/*стрелочка вниз в сортировке - поправить!*/
+
+.sorting-select:hover {
+  border: 2px solid #68a2ca;
+}
+
+.sorting-select:focus {
+  border: 2px solid #68a2ca;
+}
+
+.sorting-select:disabled {
+  color: rgba(0, 0, 0, 0.3);
+}
+
 /*ВНЕШНИЙ ВИД КАРТОЧЕК*/
 
 .view {
