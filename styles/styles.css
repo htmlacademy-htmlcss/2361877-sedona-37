@@ -179,6 +179,10 @@ img {
   margin-bottom: -6px;
 }
 
+.logo:hover {
+  opacity: 0.92;
+}
+
 .main-nav-list {
   display: flex;
   flex-wrap: wrap;
@@ -187,7 +191,7 @@ img {
   margin-left: -2px;
 
   gap: 32px;
-  /*ПЕРЕСМОТРЕТЬ ЭФИР ПРОВЕРИТЬ*/
+
 }
 
 .main-nav-link {
@@ -231,6 +235,12 @@ img {
 
   text-decoration: none;
 }
+
+.user-link:hover {
+  opacity: 0.3;
+}
+
+/*цифра и кружок тоже просвечивают, поправить!*/
 
 .user-favorites-number {
   position: absolute;
