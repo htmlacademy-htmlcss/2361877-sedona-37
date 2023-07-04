@@ -1051,12 +1051,27 @@ img {
 
 }
 
-.social-link {
+/*.social-link {
   display: block;
   width: 48px;
   height: 41px;
 
   color: #82b3d3;
+}*/
+
+
+.social-link:hover {
+  fill: #68a2ca;
+}
+
+.social-link:focus {
+  fill: #68a2ca;
+}
+
+.social-link:active {
+  opacity: 0.3;
+
+  fill: #68a2ca;
 }
 
 .phone {
