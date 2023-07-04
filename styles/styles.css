@@ -138,7 +138,8 @@ img {
 .button-transparent:focus {
   border: #83b3d3 solid 3px;
   border-radius: 4px;
-  /* обводка черная, если переключаться клавиатурой*/
+  /* обводка черная, если переключаться клавиатурой
+  если мышью, то голубой цвет*/
 }
 
 .button-transparent:active {
