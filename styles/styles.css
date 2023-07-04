@@ -1086,10 +1086,38 @@ img {
   text-decoration: none;
 }
 
-.footer-developer {
+.phone:hover {
+  color: #756157;
+}
+
+.phone:focus {
+  color: #756157;
+}
+
+.phone:active {
+  color: #756157;
+
+  opacity: 0.3;
+}
+
+/*.footer-developer {
   display: block;
   width: 115px;
   height: 33px;
 
   color: #000000;
+}*/
+
+.footer-developer:hover {
+  fill: #756157;
+}
+
+.footer-developer:focus {
+  fill: #756157;
+}
+
+.footer-developer:active {
+  opacity: 0.3;
+
+  fill: #756157;
 }
