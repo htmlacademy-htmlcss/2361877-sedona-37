@@ -1045,33 +1045,35 @@ img {
 
 .social-list {
   display: flex;
-  flex-wrap: wrap;
-  align-items: center;
   max-width: 150px;
 
+  color: #83b3d3;
 }
 
-/*.social-link {
+.social-link {
   display: block;
   width: 48px;
   height: 41px;
 
   color: #82b3d3;
-}*/
+}
 
+.social-link svg {
+  fill: currentColor;
+}
 
 .social-link:hover {
-  fill: #68a2ca;
+  color: #68a2ca;
 }
 
 .social-link:focus {
-  fill: #68a2ca;
+  color: #68a2ca;
 }
 
 .social-link:active {
-  opacity: 0.3;
+  color: #68a2ca;
 
-  fill: #68a2ca;
+  opacity: 0.3;
 }
 
 .phone {
