@@ -757,6 +757,16 @@ img {
   grid-template-columns: 143px 143px;
 }
 
+.range-input:hover {
+  background-color: #e6e6e6;
+
+}
+
+.range-input:active {
+  background-color: #e6e6e6;
+  outline: solid 2px #83b3d3;
+}
+
 .range-input-from {
   border-radius: 4px 0 0 4px;
 }
