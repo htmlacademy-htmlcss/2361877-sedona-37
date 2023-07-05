@@ -1222,3 +1222,13 @@ img {
 .modal-close-button:active svg {
   opacity: 30%;
 }
+
+.modal-title {
+  margin: 0;
+
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 36px;
+  color: #000000;
+  text-transform: uppercase;
+}
