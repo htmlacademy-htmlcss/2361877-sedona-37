@@ -222,6 +222,22 @@
         </button>
         <section class="modal-content">
           <h2 class="modal-title">Поиск гостиницы в Седоне</h2>
+          <form class="modal-form">
+            <ul class="modal-form-list list-reset">
+              <li class="modal-list-item">
+                <label for="check-in">Дата Заезда:</label>
+                <input class="input-check-in" type="date" id="check-in" name="check-in" value="27 апреля 2020">
+                <span class="modal-error">Мы не можем отправить вас в прошлое.</span>
+              </li>
+              <li class="modal-list-item">
+                <label for="check-out">Дата Выезда:</label>
+                <input class="input-check-out" type="date" id="check-out" name="check-in" value="27 апреля 2020">
+                <span class="modal-right">На эти даты есть свободные номера. Пока есть.</span>
+              </li>
+
+            </ul>
+
+          </form>
 
         </section>
       </div>
