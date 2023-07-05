@@ -736,7 +736,7 @@ img {
   opacity: 0.3;
 }
 
-.control-inpu:focus {
+.control-input:focus {
   border: 3px #83b3d3;
 }
 
@@ -747,6 +747,22 @@ img {
 
 .filter-group-range {
   margin-left: auto;
+}
+
+.range-list {
+  display: grid;
+  height: 48px;
+
+  gap: 2px;
+  grid-template-columns: 143px 143px;
+}
+
+.range-input-from {
+  border-radius: 4px 0 0 4px;
+}
+
+.range-input-until {
+  border-radius: 0 4px 4px 0;
 }
 
 .filter-group-buttons {

@@ -119,7 +119,16 @@
             </fieldset>
             <fieldset class="filter-group filter-group-range">
               <legend class="filter-title">Стоимость, ₽:</legend>
-              <span class="visually-hidden">Тут будет фильтр полосы</span>
+              <ul class="range-list list-reset">
+                <li class="range-item">
+                  <label class="visually-hidden" for="from">от</label>
+                  <input class="range-input-from form-input" id="from" type="text" value="0" placeholder="от">
+                </li>
+                <li class="range-item">
+                  <label class="visually-hidden" for="until">до</label>
+                  <input class="range-input-until form-input" id="until" type="text" value="9000" placeholder="до">
+                </li>
+              </ul>
             </fieldset>
             <fieldset class="filter-group filter-group-buttons">
               <button class="button button-light filter-submit" type="submit">Применить</button>
