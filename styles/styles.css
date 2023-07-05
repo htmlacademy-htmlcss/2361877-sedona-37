@@ -1148,3 +1148,67 @@ img {
 
   fill: #756157;
 }
+
+/*МОДАЛЬНОЕ ОКНО*/
+
+.modal-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+
+  display: flex;
+  width: 100%;
+  height: 100%;
+
+  background-color: rgba(242, 242, 242, 0.8);
+}
+
+/*.modal-container-close {
+  display: none;
+}
+*/
+
+.modal {
+  position: relative;
+
+  margin: auto;
+  padding: 64px 70px;
+
+  background-color: #ffffff;
+  border-radius: 30px;
+
+}
+
+.modal-search {
+  width: 717px;
+}
+
+.modal-close-button {
+  position: absolute;
+  right: 52px;
+
+  width: 52px;
+  height: 52px;
+
+  background-color: #f2f2f2;
+  border: none;
+  border-radius: 50%;
+
+}
+
+.modal-close-button:hover {
+  background-color: #e6e6e6;
+}
+
+.modal-close-button:focus {
+  background-color: #e6e6e6;
+  outline: solid 3px #83b3d3;
+}
+
+.modal-close-button:active {
+  background-color: #e6e6e6;
+}
+
+.modal-close-button:active svg {
+  opacity: 30%;
+}
