@@ -669,6 +669,14 @@ img {
   background-position: center;
 }
 
+.breadcrumbs-link-home:hover {
+  opacity: 0.6;
+}
+
+.breadcrumbs-link-home:active {
+  opacity: 0.3;
+}
+
 .breadcrumbs-link-current {
   position: relative;
 
