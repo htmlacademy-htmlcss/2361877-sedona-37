@@ -136,10 +136,7 @@ img {
   background-color: #82b3d3;
 }
 
-.button-light:hover {
-  background-color: #68a2ca;
-}
-
+.button-light:hover,
 .button-light:focus {
   background-color: #68a2ca;
 }
@@ -161,10 +158,7 @@ img {
   opacity: 0.6;
 }
 
-.button-transparent:focus {
-  background-color: transparent;
-}
-
+.button-transparent:focus,
 .button-transparent:active {
   background-color: transparent;
 }
@@ -174,6 +168,8 @@ img {
 
   background-color: transparent;
 }
+
+/*СОСТОЯНИЯ ДЛЯ ФОРМ ДОБАВИТЬ*/
 
 .form-input {
   width: 100%;
@@ -240,10 +236,7 @@ img {
   margin-bottom: -6px;
 }
 
-.logo:hover {
-  opacity: 0.6;
-}
-
+.logo:hover,
 .logo:focus {
   opacity: 0.6;
 }
@@ -257,7 +250,7 @@ img {
   flex-wrap: wrap;
   align-items: center;
   max-width: 550px;
-  margin-left: -2px;
+  margin-left: 20px;
 
   gap: 32px;
 
@@ -273,10 +266,21 @@ img {
   text-decoration: none;
 }
 
+.main-nav-link:hover,
+.main-nav-link:focus {
+  opacity: 0.6;
+}
+
+.main-nav-link:active {
+  opacity: 0.3;
+}
+
 .main-nav-current {
   text-decoration: 2px;
 
   border-color: #756157;
+
+  pointer-events: none;
 
   text-decoration-color: #756157;
   text-decoration-line: underline;
@@ -316,16 +320,13 @@ img {
   background-image: url("../images/svg/heart-icon.svg");
 }
 
-.user-link:hover {
+.user-link:hover,
+.user-link:focus {
   opacity: 0.6;
 }
 
 .user-link:active {
   opacity: 0.3;
-}
-
-.user-link:focus {
-  opacity: 0.6;
 }
 
 .user-favorites-number {
@@ -344,20 +345,6 @@ img {
   background-color: #7db54f;
   border-radius: 10px;
 
-}
-
-.nav-button:hover {
-  background-color: #615048;
-}
-
-.nav-button:active {
-  color: rgba(255, 255, 255, 0.3);
-
-  background-color: #756157;
-}
-
-.nav-button:disabled {
-  background-color: #e5e5e5;
 }
 
 /*БЛОК-ГЕРОЙ*/
@@ -543,11 +530,18 @@ img {
 }
 
 .services-title {
+  margin: 0 0 30px;
+
   font-weight: 700;
+  font-size: 24px;
   line-height: 28px;
   text-align: center;
   color: #000000;
   text-transform: uppercase;
+}
+
+.services-text {
+  margin: 0;
 }
 
 .services-content-home {
