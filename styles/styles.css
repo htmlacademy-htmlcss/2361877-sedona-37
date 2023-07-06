@@ -1142,17 +1142,12 @@ img {
   fill: currentColor;
 }
 
-.social-link:hover {
-  color: #68a2ca;
-}
-
+.social-link:hover,
 .social-link:focus {
   color: #68a2ca;
 }
 
 .social-link:active {
-  color: #68a2ca;
-
   opacity: 0.3;
 }
 
@@ -1168,17 +1163,12 @@ img {
   text-decoration: none;
 }
 
-.phone:hover {
-  color: #756157;
-}
-
+.phone:hover,
 .phone:focus {
   color: #756157;
 }
 
 .phone:active {
-  color: #756157;
-
   opacity: 0.3;
 }
 
@@ -1190,18 +1180,17 @@ img {
   color: #000000;
 }
 
-.footer-developer:hover {
-  fill: #756157;
+.footer-developer svg {
+  fill: currentColor;
 }
 
+.footer-developer:hover,
 .footer-developer:focus {
   fill: #756157;
 }
 
 .footer-developer:active {
   opacity: 0.3;
-
-  fill: #756157;
 }
 
 /*МОДАЛЬНОЕ ОКНО*/
