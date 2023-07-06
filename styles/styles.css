@@ -218,7 +218,15 @@ img {
 }
 
 .logo:hover {
-  opacity: 0.92;
+  opacity: 0.6;
+}
+
+.logo:focus {
+  opacity: 0.6;
+}
+
+.logo:active {
+  opacity: 0.3;
 }
 
 .main-nav-list {
@@ -272,10 +280,21 @@ img {
   height: 44px;
 
   text-decoration: none;
+
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.user-link-search {
+  background-image: url("../images/svg/search-icon.svg");
+}
+
+.user-link-favorites {
+  background-image: url("../images/svg/heart-icon.svg");
 }
 
 .user-link:hover {
-  opacity: 0.7;
+  opacity: 0.6;
 }
 
 .user-link:active {
@@ -283,10 +302,8 @@ img {
 }
 
 .user-link:focus {
-  opacity: 0.5;
+  opacity: 0.6;
 }
-
-/*цифра и кружок тоже просвечивают, поправить!*/
 
 .user-favorites-number {
   position: absolute;
@@ -1137,13 +1154,13 @@ img {
   opacity: 0.3;
 }
 
-/*.footer-developer {
+.footer-developer {
   display: block;
   width: 115px;
   height: 33px;
 
   color: #000000;
-}*/
+}
 
 .footer-developer:hover {
   fill: #756157;
@@ -1173,10 +1190,9 @@ img {
   background-color: rgba(242, 242, 242, 0.8);
 }
 
-/*.modal-container-close {
+.modal-container-close {
   display: none;
 }
-*/
 
 .modal {
   position: relative;
