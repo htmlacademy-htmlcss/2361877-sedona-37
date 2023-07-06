@@ -112,6 +112,26 @@ img {
   cursor: pointer;
 }
 
+.button:hover,
+.button:focus {
+  background-color: #615048;
+}
+
+.button:active {
+  color: rgba(255, 255, 255, 0.3);
+
+  background-color: #756157;
+}
+
+.button:disabled,
+.button-disabled {
+  color: #ffffff;
+
+  background-color: #e5e5e5;
+
+  pointer-events: none;
+}
+
 .button-light {
   background-color: #82b3d3;
 }
@@ -125,7 +145,7 @@ img {
 }
 
 .button-light:active {
-  color: rgba(255, 255, 255, 0.3);
+  background-color: #82b3d3;
 }
 
 .button-light:disabled {
@@ -137,25 +157,22 @@ img {
 }
 
 .button-transparent:hover {
-  border: transparent;
+  background-color: transparent;
   opacity: 0.6;
 }
 
 .button-transparent:focus {
-  border: #83b3d3 solid 3px;
-  border-radius: 4px;
-  /* обводка черная, если переключаться клавиатурой
-  если мышью, то голубой цвет*/
+  background-color: transparent;
 }
 
 .button-transparent:active {
-  border: transparent;
-  opacity: 0.1;
+  background-color: transparent;
 }
 
 .button-transparent:disabled {
-  border: transparent;
-  opacity: 0.3;
+  color: rgba(255, 255, 255, 0.3);
+
+  background-color: transparent;
 }
 
 .form-input {
