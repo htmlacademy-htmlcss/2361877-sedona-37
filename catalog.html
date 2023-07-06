@@ -97,16 +97,29 @@
               </fieldset>
               <fieldset class="filter-group filter-group-range">
                 <legend class="filter-title">Стоимость, ₽:</legend>
-                <ul class="range-list list-reset">
-                  <li class="range-item">
-                    <label class="visually-hidden" for="from">от</label>
-                    <input class="range-input range-input-from form-input" id="from" type="text" value="0" placeholder="от">
-                  </li>
-                  <li class="range-item">
-                    <label class="visually-hidden" for="until">до</label>
-                    <input class="range-input range-input-until form-input" id="until" type="text" value="9000" placeholder="до">
-                  </li>
-                </ul>
+                <div class="range">
+                  <div class="range-wrapper-inputs">
+
+                    <div class="range-item">
+                      <input class="form-input range-input range-input-min" id="min-price" name="min-price" type="number" placeholder="0" value="0" min="0" max="9000">
+                      <label for="min-price">от</label>
+                    </div>
+                    <div class="range-item">
+                      <input class="form-input range-input range-input-max" id="max-price" name="max-price" type="number" placeholder="9000" value="9000" min="1" max="9000">
+                      <label for="max-price">до</label>
+                    </div>
+                  </div>
+                  <div class="range-scale">
+                    <div class="range-bar" style="width: 78%;">
+                      <button class="range-toggle-btn range-toggle-btn-min" type="button">
+                        <span class="visually-hidden">Изменить минимальную цену.</span>
+                      </button>
+                      <button class="range-toggle-btn range-toggle-btn-max" type="button">
+                        <span class="visually-hidden">Изменить максимальную цену.</span>
+                      </button>
+                    </div>
+                  </div>
+                </div>
               </fieldset>
               <fieldset class="filter-group filter-group-buttons">
                 <button class="button button-light filter-submit" type="submit">Применить</button>
