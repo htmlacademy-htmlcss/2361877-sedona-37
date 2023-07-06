@@ -191,31 +191,64 @@
         </a>
 
       </footer>
-
+      <!--Модальное окно-->
+      <!--Класс modal-container-close закрывает модальное окно-->
       <div class="modal-container modal-container-close">
         <div class="modal modal-search">
-          <button class="modal-close-button">
+          <button class="modal-close-button" type="button">
             <span class="visually-hidden">Закрыть</span>
-            <svg aria-hidden="true" focusable="false" width="21" height="21" viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path d="M17.4905 4.78288L16.1982 3.49057L10.4905 9.19826L4.78279 3.49057L3.49048 4.78288L9.19817 10.4906L3.49048 16.1983L4.78279 17.4906L10.4905 11.7829L16.1982 17.4906L17.4905 16.1983L11.7828 10.4906L17.4905 4.78288Z" fill="black" />
-            </svg>
           </button>
           <section class="modal-content">
-            <h2 class="modal-title">Поиск гостиницы в Седоне</h2>
-            <form class="modal-form" action="#" method="get">
-              <ul class="modal-form-list list-reset">
-                <li class="modal-list-item">
-                  <label for="check-in">Дата Заезда:</label>
-                  <input class="input-check-in" type="date" id="check-in" name="check-in" value="27 апреля 2020">
-                  <span class="modal-error">Мы не можем отправить вас в прошлое.</span>
-                </li>
-                <li class="modal-list-item">
-                  <label for="check-out">Дата Выезда:</label>
-                  <input class="input-check-out" type="date" id="check-out" name="check-in" value="27 апреля 2020">
-                  <span class="modal-right">На эти даты есть свободные номера. Пока есть.</span>
-                </li>
+            <h2 class="modal-title page-title">Поиск гостиницы в Седоне</h2>
+            <form class="modal-search-form form" action="#" method="post">
+              <fieldset class="form-group date">
+                <label class="form-label data-label" for="arrival-date">Дата Заезда:</label>
+                <div class="date-input-container">
+                  <input class="date-input form-input" type="text" name="arrival-date" id="arrival-date" placeholder="Укажите дату" value="27 апреля 2020" required>
+                  <span class="form-message form-message-error">Мы не можем отправить вас в прошлое.</span>
+                </div>
+              </fieldset>
 
-              </ul>
+              <fieldset class="form-group date">
+                <label class="form-label data-label" for="departure-date">Дата Выезда:</label>
+                <div class="date-input-container">
+                  <input class="date-input form-input" type="text" name="departure-date" id="departure-date" placeholder="Укажите дату" value="1 сентября 2023" required>
+                  <span class="form-message">На эти даты есть свободные номера. Пока есть.</span>
+                </div>
+              </fieldset>
+              <fieldset class="form-group adults">
+                <label class="form-label adults-label" for="adults">Взрослые:</label>
+                <div class="people-input-container">
+                  <button class="people-button people-button-minus" type="button">
+                    <span class="visually-hidden">Уменьшить количество человек</span>
+                  </button>
+                  <input class="people-input people-input-adults form-input" id="adults" type="number" value="2" required>
+                  <button class="people-button people-button-plus" type="button">
+                    <span class="visually-hidden">Увеличить количество человек</span>
+                  </button>
+                </div>
+              </fieldset>
+              <fieldset class="form-group children">
+                <div class="tooltip-container">
+                  <label class="form-label adults-label" for="children">Дети:</label>
+                  <div class="tooltip">
+                    <button class="tooltip-toggle" type="button" aria-labelledby="info-label-children">
+                      <span class="visually-hidden">Дополнительная информация.</span>
+                    </button>
+                    <p class="tooltip-text" id="info-label-children">Укажите количество детей, которые будут с вами, возраст которых от 6 до 18 лет. Дети до 6 лет размещаются бесплатно.</p>
+                  </div>
+                </div>
+                <div class="people-input-container">
+                  <button class="people-button people-button-minus" type="button">
+                    <span class="visually-hidden">Уменьшить количество человек</span>
+                  </button>
+                  <input class="people-input people-input-children form-input" id="children" type="number" value="2" required>
+                  <button class="people-button people-button-plus" type="button">
+                    <span class="visually-hidden">Увеличить количество человек</span>
+                  </button>
+                </div>
+              </fieldset>
+              <button class="form-button button button-light" type="submit">Найти</button>
 
             </form>
 
