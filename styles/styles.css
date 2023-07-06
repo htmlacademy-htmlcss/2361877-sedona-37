@@ -1081,16 +1081,15 @@ img {
   border-radius: 4px;
 }
 
-.pagination-link:hover {
-  background-color: #68a2ca;
-}
-
+.pagination-link:hover,
 .pagination-link:focus {
   background-color: #68a2ca;
 }
 
 .pagination-link:active {
   color: rgba(255, 255, 255, 0.3);
+
+  background-color: #82b3d3;
 }
 
 .pagination-link-current {
@@ -1111,6 +1110,8 @@ img {
 
   background-color: transparent;
   border-color: transparent;
+
+  pointer-events: none;
 }
 
 /*ФУТЕР*/
