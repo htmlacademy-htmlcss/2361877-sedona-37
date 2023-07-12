@@ -423,10 +423,6 @@ img {
 
 }
 
-.advantages-item .advantages-content {
-  padding-top: 112px;
-}
-
 .advantages-item:nth-child(2n) {
   background-color: rgba(131, 179, 211, 0.12);
 }
@@ -443,7 +439,7 @@ img {
 .advantages-content {
   max-width: 400px;
   min-height: 385px;
-  padding: 102px 82px;
+  padding: 112px 82px 102px;
 
   text-align: center;
 }
