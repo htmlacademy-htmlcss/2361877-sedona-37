@@ -1219,7 +1219,7 @@ img {
 .pagination-list {
   display: flex;
   flex-wrap: wrap;
-  padding: 12px 0 60px;
+  padding: 38px 0 61px;
 
   gap: 8px;
 }
