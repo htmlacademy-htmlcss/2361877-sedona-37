@@ -841,7 +841,8 @@ img {
 }
 
 .filter-group-range {
-  width: 288px;
+  width: 100%;
+  max-width: 288px;
   margin-left: auto;
 }
 
