@@ -1038,7 +1038,6 @@ img {
 
 .view {
   display: grid;
-  margin-top: -7px;
 
   gap: 8px;
   grid-template-columns: repeat(3, auto);
