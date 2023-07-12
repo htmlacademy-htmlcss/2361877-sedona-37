@@ -1371,15 +1371,14 @@ img {
   background-color: rgba(242, 242, 242, 0.8);
 }
 
-.modal-container-close {
+/*.modal-container-close {
   display: none;
-}
+}*/
 
 .modal {
   position: relative;
 
-  margin: 100px auto auto;
-  /*margin: auto;*/
+  margin: auto;
   padding: 64px 70px;
 
   background-color: #ffffff;
@@ -1619,9 +1618,9 @@ input[type="number"]::-webkit-inner-spin-button {
 .tooltip-toggle {
   width: 26px;
   height: 26px;
+  margin-top: 3px;
 
   background-color: #83b3d3;
-  /*background-image: url("../img/svg/icon-info.svg");*/
   background-repeat: no-repeat;
   background-position: center;
   background-size: 2px 12px;
