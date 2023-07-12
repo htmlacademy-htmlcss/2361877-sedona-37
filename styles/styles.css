@@ -192,6 +192,7 @@ img {
 .form-input:focus,
 .form-input:active {
   background-color: #e6e6e6;
+  outline: none;
   box-shadow: 0 0 0 3px #83b3d3;
 }
 
@@ -793,8 +794,8 @@ img {
   border-radius: 4px;
 
   -webkit-appearance: none;
-     -moz-appearance: none;
-          appearance: none;
+  -moz-appearance: none;
+  appearance: none;
 }
 
 .control-input[type="checkbox"]:checked {
@@ -1014,8 +1015,8 @@ img {
   border-radius: 4px;
 
   -webkit-appearance: none;
-     -moz-appearance: none;
-          appearance: none;
+  -moz-appearance: none;
+  appearance: none;
 }
 
 .sorting-select:hover {
