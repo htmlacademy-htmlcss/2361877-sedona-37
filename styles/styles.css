@@ -1291,6 +1291,7 @@ img {
 
 .social-list {
   display: flex;
+  justify-content: start;
   max-width: 150px;
 
   color: #83b3d3;
