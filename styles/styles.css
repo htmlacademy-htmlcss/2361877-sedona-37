@@ -695,7 +695,7 @@ img {
 }
 
 .breadcrumbs-link:focus {
-  opacity: 1;
+  opacity: 0.6;
 }
 
 .breadcrumbs-link:active {
