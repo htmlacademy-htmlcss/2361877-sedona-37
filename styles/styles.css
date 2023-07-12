@@ -1096,7 +1096,7 @@ img {
 
   border-bottom: 1px solid #e6e6e6;
 
-  gap: 20px;
+  gap: 18px 20px;
   grid-template-columns: repeat(3, 1fr);
 }
 
@@ -1107,7 +1107,7 @@ img {
   border: 1px solid #e6e6e6;
   border-radius: 4px;
 
-  gap: 20px 16px;
+  gap: 16px 20px;
   grid-template-columns: repeat(2, 1fr);
 }
 
@@ -1163,20 +1163,6 @@ img {
 
 .hotels-text + .hotels-text {
   text-align: right;
-}
-
-.hotels-button-more:hover {
-  background-color: #615048;
-}
-
-.hotels-button-more:active {
-  color: rgba(255, 255, 255, 0.3);
-
-  background-color: #756157;
-}
-
-.hotels-button-more:disabled {
-  background-color: #e5e5e5;
 }
 
 .hotels-rating {
