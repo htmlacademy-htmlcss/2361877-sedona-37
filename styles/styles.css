@@ -797,6 +797,8 @@ img {
 }
 
 .control-label {
+  max-width: 150px;
+
   font-size: 18px;
   line-height: 23px;
 }
